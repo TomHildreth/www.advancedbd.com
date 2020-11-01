@@ -18,7 +18,7 @@ end
 # set :host, 'www.advancedbd.com'
 # set :port, 80
 set :protocol, 'https://'
-set :host, 'advancedbd.github.io/www.advancedbd.com'
+set :host, 'advancedbd.github.io/www.advancedbd.com/'
 set :port, 80
 
 
