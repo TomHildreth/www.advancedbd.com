@@ -12,6 +12,7 @@ require_all 'lib/helpers'
 autoload_all 'lib/helpers'
 
 activate :directory_indexes
+activate :asset_host, host: 'https://advancedbd.github.io/www.advancedbd.com'
 
 set :images_dir, 'assets/images'
 
