@@ -20,7 +20,8 @@ set :port, 80
 after_build do
   Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
 
-  File.write('build/CNAME', 'www.advancedbd.com')
+  # WILL ACTIVATE WHEN SITE IS LAUNCHED
+  # File.write('build/CNAME', 'www.advancedbd.com')
 
   add_content_to_source(postion: 'header', view_source_file: 'view_source_header.txt')
   add_content_to_source(postion: 'footer', view_source_file: 'view_source_footer.txt')
