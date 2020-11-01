@@ -17,6 +17,10 @@ end
 # set :protocol, 'https://'
 # set :host, 'www.advancedbd.com'
 # set :port, 80
+set :protocol, 'https://'
+set :host, 'advancedbd.github.io/www.advancedbd.com'
+set :port, 80
+
 
 after_build do
   Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
