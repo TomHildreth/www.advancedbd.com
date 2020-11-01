@@ -13,9 +13,10 @@ activate :minify_html do |html|
   html.remove_http_protocol = false
 end
 
-set :protocol, 'https://'
-set :host, 'www.advancedbd.com'
-set :port, 80
+# WILL ACTIVATE WHEN SITE IS LAUNCHED
+# set :protocol, 'https://'
+# set :host, 'www.advancedbd.com'
+# set :port, 80
 
 after_build do
   Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
