@@ -19,7 +19,7 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
           ruby:
             active_class = current_page.data.id == 'services-banner' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/products/", class: "nav-link") do
+            = link_to("/services/", class: "nav-link") do
                 span[class="nav-button d-lg-none"]
                   i[class="fas fa-hammer nav-icon"]
                 span[class="nav-description"]
@@ -28,7 +28,7 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
           ruby:
             active_class = current_page.data.id == 'projects' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/engagements/", class: "nav-link") do
+            = link_to("/projects/", class: "nav-link") do
                 span[class="nav-button d-lg-none"]
                   i[class="fas fa-project-diagram nav-icon"]
                 span[class="nav-description"]
@@ -37,7 +37,7 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
           ruby:
             active_class = current_page.data.id == 'corporate-structure' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/engagements/", class: "nav-link") do
+            = link_to("/structure/", class: "nav-link") do
                 span[class="nav-button d-lg-none"]
                   i[class="fas fa-brain nav-icon"]
                 span[class="nav-description"]
