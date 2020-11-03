@@ -3,10 +3,18 @@ layout: index
 ---
 
 section[class="row call-to-action"]
-  = partial "partials/pages/index/call-to-action"
-section[class="row services-banner"]
-  = partial "partials/pages/index/services"
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      = partial "partials/pages/index/call-to-action"
+section[class="row services"]
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      = partial "partials/pages/index/products"
 section[class="row projects"]
-  = partial "partials/pages/index/projects"
-section[class="row corporate-structure"]
-  = partial "partials/pages/index/structure"
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      = partial "partials/pages/index/projects"
+section[class="row structure"]
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      = partial "partials/pages/index/company"
