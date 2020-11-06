@@ -11,6 +11,6 @@ set :relative_links, true
 
 activate :relative_assets
 
-set :protocol, 'http://'
+set :protocol, 'https://'
 set :host, 'www.advancedbd.com'
 set :port, 80

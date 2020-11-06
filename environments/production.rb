@@ -13,21 +13,15 @@ activate :minify_html do |html|
   html.remove_http_protocol = false
 end
 
-# WILL ACTIVATE WHEN SITE IS LAUNCHED
-# set :protocol, 'https://'
-# set :host, 'www.advancedbd.com'
-# set :port, 80
-set :protocol, 'https://'
-set :host, 'advancedbd.github.io/www.advancedbd.com/'
-set :port, 80
 
-activate :asset_host, host: 'https://advancedbd.github.io/www.advancedbd.com'
+set :protocol, 'https://'
+set :host, 'advancedbd.robotsbuildingrobots.com'
+set :port, 80
 
 after_build do
   Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
 
-  # WILL ACTIVATE WHEN SITE IS LAUNCHED
-  # File.write('build/CNAME', 'www.advancedbd.com')
+  File.write('build/CNAME', 'advancedbd.robotsbuildingrobots.com')
 
   add_content_to_source(postion: 'header', view_source_file: 'view_source_header.txt')
   add_content_to_source(postion: 'footer', view_source_file: 'view_source_footer.txt')
