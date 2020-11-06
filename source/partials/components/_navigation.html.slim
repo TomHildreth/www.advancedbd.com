@@ -2,10 +2,11 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
   div[class="row flex-fill mx-auto navbar-wrapper"]
     div[class="col-12 col-lg-6 my-auto navbar-toggler-wrapper"]
       div[class="row"]
-        div[class="col-10 col-sm-12 d-flex my-auto"]
-          = link_to("/", class: 'logo-link-logo') do
+        div[class="col-2 logo-link-logo"]
+          = link_to("/") do
             embed[id="company-logo" src="#{image_path('logo.svg')}"]
-          = link_to("/", class: 'logo-link-text') do
+        div[class="col-8 logo-link-text"]
+          = link_to("/") do
             = data.components.social.shortname
         div[class="col-2 my-auto d-md-none navbar-button"]
           button[class="navbar-toggler" type="button" data-toggle="collapse"

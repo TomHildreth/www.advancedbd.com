@@ -24,15 +24,15 @@
 
     .navbar-toggler-wrapper {
       @include media-breakpoint-up(xs) {
-        padding: 1rem 1rem 0.5rem 1rem;
+        padding: 0;
       }
 
       .logo-link-logo {
-        @include media-breakpoint-up(xs) {
-          font-size: 1rem;
-          text-align: left;
-          text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        background-color: $color-white;
 
+        @include media-breakpoint-up(xs) {
           embed {
             width: 40px;
             pointer-events: none;
@@ -41,17 +41,17 @@
       }
 
       .logo-link-text {
+        display: flex;
+        align-items: center;
+
         @include media-breakpoint-up(xs) {
           font-size: 1rem;
           text-align: left;
           text-transform: uppercase;
-          padding-left: 0.5rem;
-          padding-top: 0.4rem;
         }
 
         @include media-breakpoint-up(lg) {
           font-size: 1.2rem;
-          padding-top: 0.2rem;
         }
       }
 
@@ -78,16 +78,7 @@
 
     .navbar-nav-item-wrapper {
       text-transform: uppercase;
-      padding-right: 0;
-      padding-left: 0;
-
-      @include media-breakpoint-up(xs) {
-        padding-top: 5px;
-      }
-
-      @include media-breakpoint-up(lg) {
-        padding-bottom: 0;
-      }
+      padding: 0;
 
       .navbar-nav {
         border: none;
