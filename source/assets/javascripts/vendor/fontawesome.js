@@ -1,5 +1,6 @@
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faHammer } from '@fortawesome/free-solid-svg-icons/faHammer';
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons/faProjectDiagram';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
@@ -11,6 +12,7 @@ library.add(faBars,
             faEnvelope,
             faProjectDiagram,
             faPhoneSquare,
+            faExclamationCircle,
             faHammer);
 
 dom.watch();
