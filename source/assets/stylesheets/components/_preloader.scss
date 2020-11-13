@@ -25,7 +25,8 @@
     .last {
       animation: pulse 0.4s alternate infinite ease-in-out;
 
-      @include media-breakpoint-up(xs) {
+      font-size: 4rem;
+      @media (min-height: $minimum-height) {
         font-size: 8rem;
       }
 

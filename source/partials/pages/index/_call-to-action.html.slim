@@ -1,7 +1,28 @@
-div[class="row"]
-  div[class="col-12 mx-auto body"]
-    |CALL TO ACTION! I'm baby palo santo raclette tumblr shabby chic succulents, fixie cray. Gentrify af occupy williamsburg sustainable mustache shaman glossier swag jianbing prism hella. Master cleanse lumbersexual leggings pork belly literally banjo hella. Taiyaki pop-up crucifix lyft occupy, pour-over helvetica brunch fingerstache tumblr jianbing. Sartorial man bun forage PBR&B drinking vinegar stumptown copper mug sriracha snackwave.
-  div[class="col-12 banner"]
+div[class="row section-container"]
+  div[class="col-12 cta-content"]
+    div[class="row cta-content-container"]
+      div[class="col-12"]
+        span
+          i[class="fas fa-quote-left"]
+        span[class="cta"]
+          = data.components.social.cta
+        span
+          i[class="fas fa-quote-right"]
+      div[class="col-12"]
+        |—
+        =>
+        = data.components.social.ceo
+
+    div[class="row cta-content-wrapper-foooter"]
+      div[class="col-12"]
+        div
+          i[class="fas fa-leaf"]
+        div
+          span
+            |Build: Faster. Stronger. Energy Efficient. Green.
+
+
+  div[class="col-12 cta-banner"]
     div[class="row mx-auto"]
       div[class="col-12"]
         div

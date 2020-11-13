@@ -34,17 +34,123 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    flex-direction: column;
 
-    .body {
-      align-items: flex-start;
-      padding: 1rem 1.5rem 1rem 1.5rem;
+    .row {
+      flex: 1;
+      display: flex;
+    }
 
+    .section-container {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-content {
       @include media-breakpoint-up(maximum) {
         max-width: map-get($grid-breakpoints, "lg");
       }
+
+      .cta-content-container {
+        @include impact-font();
+
+        font-size: 0.75rem;
+        @media (min-height: $minimum-height) {
+          font-size: 1.2rem;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(234,180,100, 0.6);
+        color: $color-white;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        .col-12 {
+          &:first-child {
+            padding: 1rem 1.5rem 0.5rem 1.5rem;
+          }
+          &:last-child {
+            padding: 0.5rem 1.5rem 1rem 1.5rem;
+          }
+        }
+      }
+
+      .cta-content-wrapper-foooter {
+        @include impact-font();
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(167,117,77, 0.6);
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        text-transform: uppercase;
+
+        font-size: 0.75rem;
+        @media (min-height: $minimum-height) {
+          font-size: 1.2rem;
+        }
+
+        .col-12 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fa-leaf {
+            font-size: 1.25rem;
+            @media (min-height: $minimum-height) {
+              font-size: 2rem;
+            }
+
+            @include media-breakpoint-up(xs) {
+              margin-right: 1rem;
+            }
+          }
+
+          @include media-breakpoint-up(xs) {
+            span {
+              display: inline;
+              padding-right: 0.5rem;
+            }
+          }
+
+          @include media-breakpoint-up(sm) {
+            span {
+              display: block;
+            }
+          }
+
+          @include media-breakpoint-only(md) {
+            span {
+              display: block;
+            }
+          }
+
+          @include media-breakpoint-up(lg) {
+            span {
+              display: inline;
+            }
+          }
+        }
+      }
+
+      .fa-quote-left,
+      .fa-quote-right {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .fa-quote-left {
+        padding-right: 0.5rem;
+      }
+
+      .fa-quote-right {
+        padding-left: 0.5rem;
+      }
     }
 
-    .banner {
+    .cta-banner {
       background: rgba(255,255,255, 0.6);
       align-items: flex-end;
       margin-top: auto;
@@ -54,8 +160,16 @@
 
       @include secondary-font();
 
+      font-size: 0.75rem;
+      @media (min-height: $minimum-height) {
+        font-size: 1.2rem;
+      }
+
       .fa-exclamation-circle {
-        font-size: 2rem;
+        font-size: 1.25rem;
+        @media (min-height: $minimum-height) {
+          font-size: 2rem;
+        }
 
         @include media-breakpoint-up(xs) {
           margin-right: 1rem;

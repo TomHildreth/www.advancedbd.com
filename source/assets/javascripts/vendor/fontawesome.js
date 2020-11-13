@@ -6,6 +6,9 @@ import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons/faProjectDia
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons/faPhoneSquare';
 import { faBrain } from '@fortawesome/free-solid-svg-icons/faBrain';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
+import { faLeaf } from '@fortawesome/free-solid-svg-icons/faLeaf';
 
 library.add(faBars,
             faBrain,
@@ -13,6 +16,9 @@ library.add(faBars,
             faProjectDiagram,
             faPhoneSquare,
             faExclamationCircle,
+            faQuoteRight,
+            faQuoteLeft,
+            faLeaf,
             faHammer);
 
 dom.watch();

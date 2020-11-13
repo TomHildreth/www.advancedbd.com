@@ -54,12 +54,16 @@
         align-items: center;
         text-align: left;
         text-transform: uppercase;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+
+        font-size: 0.75rem;
+        @media (min-height: $minimum-height) {
+          font-size: 1rem;
+        }
 
         @include media-breakpoint-up(xs) {
-          font-size: 1rem;
           font-weight: bold;
-          padding-right: 0;
-          padding-left: 0;
 
           a {
             padding-left: 0.25rem;
@@ -95,8 +99,12 @@
         }
 
         .navbar-toggler {
+          font-size: 0.75rem;
+          @media (min-height: $minimum-height) {
+            font-size: 1.25rem;
+          }
+
           color: $darkest-color;
-          font-size: 1.25rem;
           line-height: 1;
           background-color: transparent;
           border: 1px solid $darkest-color;
@@ -199,10 +207,13 @@
             color: $darkest-color;
             padding: 0;
 
+            font-size: 0.75rem;
+            @media (min-height: $minimum-height) {
+              font-size: 1.25rem;
+            }
+
             @include media-breakpoint-up(xs) {
               @include secondary-font();
-
-              font-size: 1rem;
 
               span {
                 display: inline;
