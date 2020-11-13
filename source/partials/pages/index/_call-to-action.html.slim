@@ -1,6 +1,6 @@
 div[class="row section-container"]
   div[class="col-12 cta-content"]
-    div[class="row cta-content-container"]
+    div[class="row cta-content-about"]
       div[class="col-12"]
         span
           i[class="fas fa-quote-left"]
@@ -13,7 +13,7 @@ div[class="row section-container"]
         =>
         = data.components.social.ceo
 
-    div[class="row cta-content-wrapper-foooter"]
+    div[class="row cta-content-details"]
       div[class="col-12"]
         div
           i[class="fas fa-leaf"]
@@ -21,6 +21,9 @@ div[class="row section-container"]
           span
             |Build: Faster. Stronger. Energy Efficient. Green.
 
+    div[class="row d-none d-md-block cta-content-data"]
+      div[class="col-12"]
+        img[id="company-data" src="#{image_path('charts/sippayoffcomparison.svg')}"]
 
   div[class="col-12 cta-banner"]
     div[class="row mx-auto"]
