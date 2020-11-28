@@ -1,5 +1,5 @@
 .call-to-action {
-  background: url('#{$image-path}/background.jpg') no-repeat;
+  background: url('#{$image-path}/pages/index/project.jpg') no-repeat;
   padding: 0;
   background-size: cover;
   background-position: top center;
@@ -86,13 +86,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(141, 152, 167, 0.8);
         padding: 1rem 1.5rem 1rem 1.5rem;
         text-transform: uppercase;
 
         font-size: 0.75rem;
         @media (min-height: $minimum-height) {
           font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(xs) {
+          background: rgba(141, 152, 167, 0.8);
+          width: initial;
+        }
+
+        @include media-breakpoint-up(lg) {
+          background: rgba(255, 255, 255,$backdrop-opacity-light);
+          width: 457px;
+          color: $color-green;
         }
 
         .col-12 {
@@ -161,55 +171,9 @@
         @include media-breakpoint-up(lg) {
           align-items: normal;
 
-          .col-7 {
-            padding-left: 0;
-          }
-
-          .col-5 {
-            display: flex;
-            flex-direction: column;
-          }
-
           #sippayoffcomparison {
-            height: 325px;
-          }
-
-          .col-4 {
-            padding-right: 2rem;
-          }
-
-          .cta-content-sun,
-          .cta-content-water {
-            margin-bottom: inherit;
-          }
-
-          .cta-content-fire {
-            height: 100%;
-          }
-        }
-
-        .cta-content-sun,
-        .cta-content-water,
-        .cta-content-fire {
-          background: rgba(255, 255, 255, $backdrop-opacity-light);
-          display: flex;
-          align-items: center;
-          color: $color-black;
-
-          .col-10 {
-            text-align: left;
-            text-transform: uppercase;
-            padding: 1rem 0.75rem;
-            font-size: 0.75rem;
-          }
-
-          .fa-sun,
-          .fa-cloud-showers-heavy,
-          .fa-fire-alt {
-            font-size: 1.25rem;
-            @media (min-height: $minimum-height) {
-              font-size: 2rem;
-            }
+            height: 275px;
+            width: 457px;
           }
         }
       }
@@ -241,7 +205,7 @@
       }
 
       .cta-background-description {
-        background: rgba(255,255,255,$backdrop-opacity-super-light);
+        background: rgba(255, 255, 255,$backdrop-opacity-super-light);
         padding: 1rem;
 
         a {
@@ -262,7 +226,7 @@
       }
 
       .cta-banner-description {
-        background: rgba(255,255,255,$backdrop-opacity-light);
+        background: rgba(255, 255, 255,$backdrop-opacity-light);
         padding: 1.5rem 1rem;
       }
 

@@ -7,6 +7,7 @@ $color-two: #8D98A7;
 $color-three: #DCCCBB;
 $color-four: #EAB464;
 $color-five: #A7754D;
+$color-green: #28a745;
 
 @mixin font-color-light { color: $color-black; }
 
@@ -17,7 +18,7 @@ $border-color: $color-one;
 $link-color: $color-one;
 
 $backdrop-opacity: 0.8;
-$backdrop-opacity-super-light: 0.2;
+$backdrop-opacity-super-light: 0.4;
 $backdrop-opacity-light: 0.7;
 
 $minimum-height: 700px;

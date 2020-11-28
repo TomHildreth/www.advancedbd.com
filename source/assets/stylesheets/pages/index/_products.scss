@@ -1,3 +1,62 @@
 .products {
+  @include media-breakpoint-up(xs) {
+    background: url('#{$image-path}/pages/index/always_grey.png') repeat;
+  }
 
+  @include media-breakpoint-up(md) {
+    background: none;
+  }
+
+  .section-wrapper {
+    .header {
+      @include media-breakpoint-up(xs) {
+        background: rgba(234, 180, 100, $backdrop-opacity-light);
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: bold;
+        color: $color-white;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 0.75rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    .body {
+      @include media-breakpoint-up(xs) {
+        background: rgba(255, 255, 255, $backdrop-opacity-light);
+        text-align: left;
+
+        .row {
+          padding: 1rem 1rem 1rem 0.5rem;
+        }
+
+        .col-2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          #fire,
+          #sun,
+          #rain {
+            width: 50px;
+          }
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 0.75rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
+    }
+  }
 }
