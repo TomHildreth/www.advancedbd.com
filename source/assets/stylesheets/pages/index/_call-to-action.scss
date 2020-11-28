@@ -55,7 +55,7 @@
         text-transform: uppercase;
 
         .col-12 {
-          background: rgba(234, 180, 100, 0.6);
+          background: rgba(234, 180, 100, $backdrop-opacity-light);
 
           &:first-child {
             padding: 1rem 1.5rem 0.5rem 1.5rem;
@@ -191,7 +191,7 @@
         .cta-content-sun,
         .cta-content-water,
         .cta-content-fire {
-          background: rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, $backdrop-opacity-light);
           display: flex;
           align-items: center;
           color: $color-black;
@@ -216,29 +216,54 @@
     }
 
     .cta-banner {
-      background: rgba(255, 255, 255, 0.6);
       align-items: flex-end;
       margin-top: auto;
       color: $color-black;
       text-transform: uppercase;
-      padding: 1.5rem 1rem;
+      padding: 0;
 
       @include secondary-font();
 
       font-size: 0.75rem;
       @media (min-height: $minimum-height) {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       .fa-exclamation-circle {
         font-size: 1.25rem;
         @media (min-height: $minimum-height) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
 
         @include media-breakpoint-up(xs) {
           margin-right: 1rem;
         }
+      }
+
+      .cta-background-description {
+        background: rgba(255,255,255,$backdrop-opacity-super-light);
+        padding: 1rem;
+
+        a {
+          color: $color-black;
+        }
+
+        @include media-breakpoint-up(xs) {
+          .col-12 {
+            max-width: map-get($grid-breakpoints, "sm");
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          .col-12 {
+            max-width: map-get($grid-breakpoints, "maximum");
+          }
+        }
+      }
+
+      .cta-banner-description {
+        background: rgba(255,255,255,$backdrop-opacity-light);
+        padding: 1.5rem 1rem;
       }
 
       .col-12 {
@@ -269,12 +294,6 @@
           span {
             display: inline;
           }
-        }
-      }
-
-      .row {
-        @include media-breakpoint-up(maximum) {
-          max-width: map-get($grid-breakpoints, "lg");
         }
       }
     }

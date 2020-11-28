@@ -11,6 +11,7 @@ import { faLeaf } from '@fortawesome/free-solid-svg-icons/faLeaf';
 import { faSun } from '@fortawesome/free-solid-svg-icons/faSun';
 import { faCloudShowersHeavy } from '@fortawesome/free-solid-svg-icons/faCloudShowersHeavy';
 import { faFireAlt } from '@fortawesome/free-solid-svg-icons/faFireAlt';
+import { faHammer } from '@fortawesome/free-solid-svg-icons/faHammer';
 
 library.add(faBars,
             faBrain,
@@ -22,6 +23,7 @@ library.add(faBars,
             faQuoteLeft,
             faLeaf,
             faSun,
+            faHammer,
             faCloudShowersHeavy,
             faFireAlt);
 

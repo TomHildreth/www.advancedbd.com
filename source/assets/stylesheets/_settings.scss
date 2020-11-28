@@ -13,10 +13,12 @@ $color-five: #A7754D;
 $darkest-color: $color-one;
 $highlight-color: $color-four;
 $alert-color: $color-four;
-$border-color: $color-two;
+$border-color: $color-one;
+$link-color: $color-one;
 
 $backdrop-opacity: 0.8;
-$backdrop-opacity-light: 0.6;
+$backdrop-opacity-super-light: 0.2;
+$backdrop-opacity-light: 0.7;
 
 $minimum-height: 700px;
 $grid-breakpoints: (

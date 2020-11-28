@@ -104,7 +104,7 @@
             font-size: 1.25rem;
           }
 
-          color: $darkest-color;
+          color: $link-color;
           line-height: 1;
           background-color: transparent;
           border: 1px solid $darkest-color;
@@ -188,6 +188,8 @@
           }
 
           .nav-icon {
+            color: $link-color;
+
             @include media-breakpoint-up(xs) {
               margin-right: 0.3rem;
             }
@@ -204,7 +206,7 @@
           }
 
           .nav-link {
-            color: $darkest-color;
+            color: $link-color;
             padding: 0;
 
             font-size: 0.75rem;
