@@ -13,6 +13,10 @@
     height: calc((var(--vh, 1vh) * 100) - 147px);
   }
 
+  @include media-breakpoint-up(md) {
+    height: calc((var(--vh, 1vh) * 100) - 125px);
+  }
+
   @include media-breakpoint-up(lg) {
     height: calc((var(--vh, 1vh) * 100) - 69px);
   }
@@ -55,7 +59,7 @@
         text-transform: uppercase;
 
         .col-12 {
-          background: rgba(234, 180, 100, $backdrop-opacity-light);
+          background: rgba(234, 180, 100, $backdrop-opacity-super-light);
 
           &:first-child {
             padding: 1rem 1.5rem 0.5rem 1.5rem;
@@ -226,7 +230,7 @@
       }
 
       .cta-banner-description {
-        background: rgba(255, 255, 255,$backdrop-opacity-light);
+        background: rgba(255, 255, 255, $backdrop-opacity-dark);
         padding: 1.5rem 1rem;
       }
 
