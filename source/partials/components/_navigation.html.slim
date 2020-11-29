@@ -1,6 +1,6 @@
 nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
   div[class="row flex-fill mx-auto navbar-wrapper"]
-    div[class="col-12 col-lg-6 my-auto navbar-toggler-wrapper"]
+    div[class="col-12 col-lg-5 my-auto navbar-toggler-wrapper"]
       div[class="row"]
         div[class="col-2 col-sm-1 logo-link-logo"]
           = link_to("/") do
@@ -16,43 +16,33 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
                                                       aria-label="Toggle navigation"]
             i[id="nav-button" class="fas fa-bars"]
 
-    div[class="col-12 col-lg-6 navbar-nav-item-wrapper"]
+    div[class="col-12 col-lg-7 navbar-nav-item-wrapper"]
       div[class="collapse navbar-collapse" id="navbarCollapse"]
         ul[class="navbar-nav flex-fill"]
           ruby:
-            active_class = current_page.data.id == 'services' ? 'active' : ''
+            active_class = current_page.data.id == 'sustainability' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/products/", class: "nav-link") do
-                span[class="nav-button d-lg-none"]
-                  i[class="fas fa-hammer nav-icon"]
+            = link_to("/pages/sustainability/", class: "nav-link") do
                 span[class="nav-description"]
-                  |Products
+                  |Sustainability
+
+          ruby:
+            active_class = current_page.data.id == 'roof-and-wallguard' ? 'active' : ''
+          li[class="nav-item flex-fill #{active_class}"]
+            = link_to("/pages/roof-and-wallguard/", class: "nav-link") do
+                span[class="nav-description"]
+                  |Roof & Wallguard
 
           ruby:
             active_class = current_page.data.id == 'projects' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/projects/", class: "nav-link") do
-                span[class="nav-button d-lg-none"]
-                  i[class="fas fa-project-diagram nav-icon"]
+            = link_to("/pages/projects/", class: "nav-link") do
                 span[class="nav-description"]
                   |Projects
 
           ruby:
-            active_class = current_page.data.id == 'corporate-structure' ? 'active' : ''
+            active_class = current_page.data.id == 'company' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/company/", class: "nav-link") do
-                span[class="nav-button d-lg-none"]
-                  i[class="fas fa-brain nav-icon"]
+            = link_to("/pages/company/", class: "nav-link") do
                 span[class="nav-description"]
                   |Company
-
-          ruby:
-            active_class = current_page.data.id == 'contact' ? 'active' : ''
-          li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/contact/", class: "nav-link") do
-                span[class="nav-button d-none d-lg-block"]
-                  i[class="fas fa-phone-square nav-icon"]
-                span[class="nav-button"]
-                  i[class="far fa-envelope nav-icon"]
-                span[class="nav-description d-lg-none"]
-                  |Contact

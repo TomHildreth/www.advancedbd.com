@@ -34,7 +34,11 @@
         text-align: left;
 
         .row {
-          padding: 1rem 1rem 1rem 0.5rem;
+          padding: 1rem 1rem 0 0.5rem;
+        }
+
+        .row:last-of-type {
+          padding-bottom: 1rem;
         }
 
         .col-2 {

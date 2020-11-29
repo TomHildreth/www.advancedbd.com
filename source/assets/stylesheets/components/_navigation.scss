@@ -124,7 +124,7 @@
       }
 
       @include media-breakpoint-up(lg) {
-        padding-top: 0.5rem;
+
       }
 
       .navbar-nav {
@@ -133,6 +133,8 @@
 
         li {
           @include media-breakpoint-up(xs) {
+            padding: 1rem 1.5rem;
+
             &:first-child {
               border-top: 0.15rem solid $border-color;
             }
@@ -157,10 +159,10 @@
           }
 
           @include media-breakpoint-up(lg) {
-            &:first-child,
-            &:not(:last-child) {
-              margin-right: 1rem;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 85px;
 
             &:first-child,
             &:not(:first-child),
@@ -171,37 +173,19 @@
 
           &:hover {
             @include media-breakpoint-up(xs) {
-              background-color: $color-white;
+              background-color: $darkest-color;
 
               a {
-                color: $darkest-color;
+                color: $color-four;
               }
             }
 
             @include media-breakpoint-up(lg) {
-              background-color: $color-white;
+              background-color: $darkest-color;
 
               a {
-                color: $darkest-color;
+                color: $color-four;
               }
-            }
-          }
-
-          .nav-icon {
-            color: $link-color;
-
-            @include media-breakpoint-up(xs) {
-              margin-right: 0.3rem;
-            }
-
-            @include media-breakpoint-up(sm) {
-              margin-right: inherit;
-            }
-
-            @include media-breakpoint-up(lg) {
-              font-size: 1.5rem;
-              margin-top: 0;
-              margin-right: 1rem;
             }
           }
 
@@ -235,7 +219,6 @@
               @include primary-font();
 
               font-size: 1rem;
-              padding: 0.8rem 0.5rem;
 
               .nav-button {
                 border-right: none;
@@ -243,19 +226,6 @@
                 margin-right: initial;
                 display: block;
                 min-width: initial;
-              }
-
-              .nav-description {
-                display: block;
-                font-size: 1rem;
-              }
-            }
-
-            @include media-breakpoint-up(lg) {
-              display: inline-flex;
-
-              .nav-description {
-                font-size: 1.2rem;
               }
             }
           }

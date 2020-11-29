@@ -95,14 +95,13 @@
         }
 
         @include media-breakpoint-up(xs) {
-          background: rgba(141, 152, 167, 0.8);
+          background: rgba(255, 255, 255,$backdrop-opacity-light);
+          color: $color-green;
           width: initial;
         }
 
         @include media-breakpoint-up(lg) {
-          background: rgba(255, 255, 255,$backdrop-opacity-light);
           width: 457px;
-          color: $color-green;
         }
 
         .col-12 {
@@ -160,6 +159,7 @@
 
           #sippayoffcomparison {
             height: 200px;
+            width: 325px;
           }
 
           .cta-content-sun,
