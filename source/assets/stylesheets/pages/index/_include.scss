@@ -7,10 +7,6 @@
 
   section {
     margin: 0;
-
-    &:not(:first-child) {
-      padding: 1rem;
-    }
   }
 
   @import "pages/index/call-to-action";
