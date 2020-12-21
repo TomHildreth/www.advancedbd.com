@@ -99,7 +99,7 @@
         }
 
         @include media-breakpoint-up(xs) {
-          background: rgba(255, 255, 255,$backdrop-opacity-light);
+          background: rgba(255, 255, 255, $backdrop-opacity-light);
           color: $color-green;
           width: initial;
         }

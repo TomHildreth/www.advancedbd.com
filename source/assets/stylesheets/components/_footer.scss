@@ -1,0 +1,21 @@
+.footer {
+  padding: 1rem;
+
+  .footer-wrapper {
+    padding-top: 0.5rem;
+
+    .row:first-child {
+      padding-bottom: 1rem;
+    }
+
+    span {
+      display: block;
+    }
+
+    address {
+      display: block;
+      padding: 1rem;
+      background: rgba(255, 255, 255, $backdrop-opacity-light);
+    }
+  }
+}
