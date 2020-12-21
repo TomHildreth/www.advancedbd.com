@@ -4,8 +4,23 @@
   .footer-wrapper {
     padding-top: 0.5rem;
 
-    .row:first-child {
-      padding-bottom: 1rem;
+    @include media-breakpoint-up(xs) {
+      max-width: initial;
+
+      .description,
+      .copyright {
+        padding-bottom: 1rem;
+      }
+
+      .description {
+        padding: 0 0 1rem 0;
+      }
+
+      .copyright {
+        @include secondary-font();
+
+        text-transform: uppercase;
+      }
     }
 
     span {

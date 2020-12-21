@@ -111,6 +111,11 @@
             max-width: 1000px;
           }
         }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+          padding-top: 15rem;
+        }
       }
     }
 

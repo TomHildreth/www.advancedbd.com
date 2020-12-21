@@ -5,7 +5,7 @@ div[class="col-12 mx-auto description-cta-wrapper"]
 
 div[class="col-12 mx-auto description-wrapper"]
   div[class="row"]
-    div[class="col-12 description"]
+    div[class="col-12 col-md-8"]
       span[class="title"]
         |Product Certifications
       span[class="certifications"]
@@ -16,3 +16,22 @@ div[class="col-12 mx-auto description-wrapper"]
 
       span[class="certification-detail"]
         = data.company.certification_detail
+
+    div[class="d-none d-md-block col-md-4 address-wrapper"]
+      div[class="row"]
+        div[class="col-12 description"]
+          |For more information on Advanced Building and Development's products please contact us.
+        div[class="col-12"]
+          address
+            = data.components.social.formalname
+            br
+            = data.components.address.street
+            br
+            = data.components.address.city_state_zip
+            br
+            |Mobile:
+            =>
+            = data.components.social.phone
+            br
+            a[href="mailto:#{data.components.social.email}"]
+              = data.components.social.email

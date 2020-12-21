@@ -1,9 +1,8 @@
 div[class="col-12 mx-auto footer-wrapper"]
   div[class="row"]
-    div[class="col-12"]
+    div[class="col-12 col-md-7 d-md-none description"]
       |For more information on Advanced Building and Development's products please contact us.
-  div[class="row"]
-    div[class="col-12 p-0"]
+    div[class="col-12 col-md-5 p-0 d-md-none"]
       address
         = data.components.social.formalname
         br
@@ -17,3 +16,9 @@ div[class="col-12 mx-auto footer-wrapper"]
         br
         a[href="mailto:#{data.components.social.email}"]
           = data.components.social.email
+    div[class="col-12 col-md-7 p-0 mx-auto copyright"]
+      |&#169;
+      =>
+      = data.company.copyright
+      =>
+      = data.components.social.formalname
