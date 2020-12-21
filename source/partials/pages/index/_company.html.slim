@@ -1,2 +1,18 @@
-div[class="col-12"]
-  | COMPANY! Thundercats offal photo booth meh twee, pork belly jean shorts schlitz you probably haven't heard of them adaptogen dreamcatcher pop-up biodiesel succulents normcore. Vice food truck williamsburg etsy coloring book, dreamcatcher tousled meh DIY polaroid air plant roof party microdosing. Taiyaki jean shorts fashion axe, meditation you probably haven't heard of them waistcoat tofu viral DIY. Banjo gluten-free wayfarers, portland hella migas lumbersexual cred hashtag artisan four dollar toast.
+div[class="col-12 mx-auto description-cta-wrapper"]
+  div[class="row"]
+    div[class="col-12 description-cta"]
+      = data.company.description
+
+div[class="col-12 mx-auto description-wrapper"]
+  div[class="row"]
+    div[class="col-12 description"]
+      span[class="title"]
+        Product Certifications:
+      span[class="certifications"]
+        ul
+          - data.company.certifications.sort_by { |k| k["id"] }.each_with_index do |certification, index|
+            li
+              = certification.details
+
+      span[class="certification-detail"]
+        = data.company.certification_detail

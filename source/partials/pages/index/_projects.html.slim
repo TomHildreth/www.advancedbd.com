@@ -1,2 +1,35 @@
-div[class="col-12"]
-  | PROJECTS! Whatever hot chicken keytar hoodie fixie VHS tattooed wayfarers beard adaptogen prism lomo chicharrones four loko YOLO. Vaporware listicle ugh, pok pok meggings celiac kogi hoodie occupy adaptogen cred messenger bag selvage venmo aesthetic. Kinfolk green juice paleo vinyl hot chicken seitan. Whatever woke migas, selfies shaman post-ironic prism YOLO bicycle rights humblebrag keffiyeh tote bag brunch trust fund.
+div[class="row mx-auto projects-wrapper no-gutters"]
+  div[class="col-12"]
+    div[id="projects-carousel" class="carousel slide" data-ride="carousel"]
+      ol[class="carousel-indicators"]
+        - data.projects.list.sort_by { |k| k["id"] }.reverse.each_with_index do |project, index|
+          ruby:
+              active_class = index == 0 ? "active" : ""
+          li[data-target="#projects-carousel" data-slide-to="#{index}" class="#{active_class}"]
+      div[class="carousel-inner"]
+        - data.projects.list.sort_by { |k| k["id"] }.reverse.each_with_index do |project, index|
+          ruby:
+            postion_class = if index == 0
+                              "first"
+                            elsif index == data.projects.list.count
+                              "last"
+                            else
+                              ""
+                            end
+            active_class = index == 0 ? "active" : ""
+          div[class="carousel-item #{postion_class} #{active_class}"]
+            div[class="mx-auto carousel-image"]
+              img[class="d-block" src="#{image_path('pages/projects/' + project.image)}"]
+            div[class="mx-auto carousel-caption"]
+              div[class="title"]
+                = project.title
+              div[class="details"]
+                = project.details
+      a[class="carousel-control-prev left" href="#projects-carousel" role="button" data-slide="prev"]
+        span[class="carousel-control-prev-icon" aria-hidden="true"]
+        span[class="sr-only"]
+          |Previous
+      a[class="carousel-control-next right" href="#projects-carousel" role="button" data-slide="next"]
+        span[class="carousel-control-next-icon" aria-hidden="true"]
+        span[class="sr-only"]
+          |Next

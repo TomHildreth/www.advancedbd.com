@@ -1,6 +1,7 @@
 .products {
   @include media-breakpoint-up(xs) {
-    background: url('#{$image-path}/pages/index/always_grey.png') repeat;
+    background: url('#{$image-path}/pages/index/always-grey.png') repeat;
+    padding: 1rem;
   }
 
   @include media-breakpoint-up(md) {

@@ -21,6 +21,7 @@ $backdrop-opacity: 0.8;
 $backdrop-opacity-super-light: 0.5;
 $backdrop-opacity-light: 0.6;
 $backdrop-opacity-dark: 0.8;
+$backdrop-opacity-darkest: 0.9;
 
 $minimum-height: 700px;
 $grid-breakpoints: (
@@ -35,3 +36,5 @@ $grid-breakpoints: (
   xxl: 1800px,
   xxxl: 2450px
 );
+
+$zindex-cover: 10000 !default;
