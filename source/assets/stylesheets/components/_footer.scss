@@ -21,6 +21,13 @@
 
         text-transform: uppercase;
         text-align: center;
+        max-width: 250px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .copyright {
+        max-width: initial;
       }
     }
 
