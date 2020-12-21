@@ -106,7 +106,10 @@
       #projects-carousel {
         min-height: 450px;
 
-        .carousel-image{
+        .carousel-caption {
+          max-width: initial;
+        }
+        .carousel-image {
           img {
             max-width: 1000px;
           }
@@ -114,7 +117,7 @@
 
         .carousel-control-next,
         .carousel-control-prev {
-          padding-top: 15rem;
+          padding-top: 10rem;
         }
       }
     }
