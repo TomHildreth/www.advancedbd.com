@@ -243,19 +243,19 @@
           font-weight: bold;
 
           @include media-breakpoint-up(xs) {
-            background-color: $color-white;
+            background-color: $darkest-color;
 
             a {
-              color: $darkest-color;
+              color: $color-four;
             }
           }
 
           @include media-breakpoint-up(lg) {
-            background-color: $color-white;
+            background-color: $darkest-color;
             border-bottom: 0.15rem solid $border-color;
 
             a {
-              color: $darkest-color;
+              color: $color-four;
             }
           }
         }

@@ -224,6 +224,10 @@
           color: $color-black;
         }
 
+        a:hover {
+          text-decoration: none;
+        }
+
         @include media-breakpoint-up(xs) {
           .col-12 {
             max-width: map-get($grid-breakpoints, "sm");
@@ -240,6 +244,14 @@
       .cta-banner-description {
         background: rgba(255, 255, 255, $backdrop-opacity-dark);
         padding: 1.5rem 1rem;
+
+        a {
+          color: $color-black;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
       }
 
       .col-12 {

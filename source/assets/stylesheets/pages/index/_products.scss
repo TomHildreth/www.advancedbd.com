@@ -8,6 +8,11 @@
     background: none;
   }
 
+  @include media-breakpoint-up(lg) {
+    background: none;
+    padding-top: 0;
+  }
+
   .section-wrapper {
     .header {
       @include media-breakpoint-up(xs) {
