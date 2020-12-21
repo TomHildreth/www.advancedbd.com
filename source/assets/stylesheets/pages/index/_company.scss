@@ -1,4 +1,6 @@
 .company {
+  @include box-shadow();
+
   @include media-breakpoint-up(xs) {
     background: url('#{$image-path}/pages/index/dark-sharp-edges.png') repeat;
     padding: 0;
@@ -8,7 +10,7 @@
     background: url('#{$image-path}/pages/index/company-background.png') no-repeat bottom right;
 
     @include media-breakpoint-up(xs) {
-      padding: 1rem 1rem;
+      padding: 0 1rem 1rem 1rem;
     }
   }
 
@@ -27,31 +29,32 @@
       @include secondary-font();
 
       background: rgba(234, 180, 100, $backdrop-opacity-light);
+      color: $color-three;
       text-transform: uppercase;
       padding: 1rem;
-
-      .fa-quote-left,
-      .fa-quote-right {
-        font-size: 1.5rem;
-        padding-bottom: 0.5rem;
-
-        @include font-highlight-color();
-      }
-
-      .fa-quote-left {
-        padding-right: 0.5rem;
-      }
-
-      .fa-quote-right {
-        padding-left: 0.5rem;
-      }
     }
   }
 
   .description-wrapper {
     max-width: map-get($grid-breakpoints, "lg");
-    background: rgba(220, 204, 187, $backdrop-opacity-dark);
-    padding: 1rem 2rem;
-    color: $color-one;
+    background: rgba(141, 152, 162, $backdrop-opacity-darkest);
+    padding: 1rem 1.5rem;
+    color: $color-black;
+
+    span {
+      display: block;
+    }
+
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+
+    .certifications {
+      ul {
+        padding-left: 1.25rem;
+      }
+    }
   }
 }
