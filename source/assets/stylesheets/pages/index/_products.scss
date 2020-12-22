@@ -15,6 +15,15 @@
 
   .section-wrapper {
     .header {
+      a {
+        color: $color-black;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
       @include media-breakpoint-up(xs) {
         background: rgba(234, 180, 100, $backdrop-opacity-light);
         padding: 1rem 1.5rem;

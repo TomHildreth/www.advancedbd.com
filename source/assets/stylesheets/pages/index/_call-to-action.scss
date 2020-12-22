@@ -46,8 +46,8 @@
     }
 
     .cta-content {
-      @include media-breakpoint-up(maximum) {
-        max-width: map-get($grid-breakpoints, "lg");
+      @include media-breakpoint-up(xl) {
+        max-width: map-get($grid-breakpoints, "xl");
       }
 
       .cta-content-about {
