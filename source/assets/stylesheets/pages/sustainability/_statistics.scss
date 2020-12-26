@@ -7,29 +7,24 @@
     @include box-shadow();
 
     background: rgba(234, 180, 100, $backdrop-opacity-dark);
-    padding: 1rem 1.5rem 0 1.5rem;
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      padding-bottom: 1rem;
-    }
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
 
     strong {
       color: $color-white;
     }
 
+    .col-12 {
+      padding-bottom: 1rem;
+    }
+
     @include media-breakpoint-up(xs) {
-      .col-12 {
-        max-width: none;
+      .row {
+        max-width: initial;
       }
     }
 
     @include media-breakpoint-up(md) {
-      .col-12 {
+      .row {
         max-width: map-get($grid-breakpoints, "sm");
       }
     }

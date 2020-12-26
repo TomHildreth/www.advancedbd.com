@@ -1,4 +1,10 @@
 #sustainability {
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @import "pages/sustainability/call-to-action";
   @import "pages/sustainability/statistics";
   @import "pages/sustainability/details";

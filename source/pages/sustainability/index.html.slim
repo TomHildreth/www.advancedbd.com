@@ -5,29 +5,42 @@ layout: page
 
 section[class="row call-to-action"]
   div[class="col-12 mx-auto section-wrapper"]
-    div[class="row"]
+    div[class="row d-md-none"]
       div[class="col-12 header"]
         |Sustainability
-    div[class="row"]
+
+    div[class="row d-md-none"]
       div[class="col-12"]
         = data.sustainability.cta.top
 
-    div[class="row"]
-      div[class="col-12"]
-        img[class="d-block" src="#{image_path('pages/sustainability/design.jpg')}"]
+    div[class="row d-md-none"]
+      div[class="col-12 image-wrapper"]
+        img[src="#{image_path('pages/sustainability/design.jpg')}"]
 
-    div[class="row"]
+    div[class="row d-md-none"]
       div[class="col-12"]
         = data.sustainability.cta.bottom
 
+    div[class="row d-none d-md-flex"]
+      div[class="col-7"]
+        span
+          = data.sustainability.cta.top
+        span
+          = data.sustainability.cta.bottom
+
+      div[class="col-5 image-wrapper"]
+        img[src="#{image_path('pages/sustainability/design.jpg')}"]
+
 section[class="row statistics"]
   div[class="col-12 mx-auto section-wrapper"]
-    div[class="row"]
-      div[class="col-12 mx-auto"]
-        ul
-          - data.sustainability.statistics.sort_by { |k| k["id"] }.each_with_index do |value, index|
-            li
-              = value.description.try(:html_safe)
+    div[class="row mx-auto"]
+      div[class="col-12"]
+        = data.sustainability.statistics[0].description.try(:html_safe)
+      div[class="col-12"]
+        = data.sustainability.statistics[1].description.try(:html_safe)
+      div[class="col-12"]
+        = data.sustainability.statistics[2].description.try(:html_safe)
+
 
 section[class="row details"]
   div[class="col-12 mx-auto section-wrapper"]
@@ -39,8 +52,8 @@ section[class="row details"]
           |BUILDING WITH SIPs
 
     div[class="row"]
-      div[class="col-12"]
-        img[class="d-block" src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
+      div[class="col-12 image-wrapper"]
+        img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
 
     div[class="row"]
       div[class="col-12"]

@@ -11,12 +11,36 @@
     background: rgba(230, 233, 242, $backdrop-opacity-darkest);
     padding: 1rem 1rem 0 1rem;
 
+    @include media-breakpoint-up(md) {
+      max-width: map-get($grid-breakpoints, "md");
+    }
+
     .row {
       padding-bottom: 1rem;
     }
 
     img {
-      max-width: 315px;
+      @include media-breakpoint-up(xs) {
+        max-width: 315px;
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: 275px;
+      }
+    }
+
+    span {
+      display: block;
+
+      @include media-breakpoint-up(xs) {
+        padding: 0;
+      }
+
+      @include media-breakpoint-up(md) {
+        &:first-child {
+          padding-bottom: 1rem;
+        }
+      }
     }
 
     .header {
