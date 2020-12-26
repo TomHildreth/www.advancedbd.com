@@ -45,8 +45,12 @@
       display: block;
     }
 
-    .title {
+    .tilte {
       text-transform: uppercase;
+    }
+
+    .title,
+    .cta {
       font-weight: bold;
       padding-bottom: 1rem;
     }

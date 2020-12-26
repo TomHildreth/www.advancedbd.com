@@ -7,15 +7,14 @@ div[class="col-12 mx-auto description-wrapper"]
   div[class="row"]
     div[class="col-12 col-md-7"]
       span[class="title"]
-        |Product Certifications
+        |Certification
+      span[class="cta"]
+        |"Not all SIPs are created equal!"
       span[class="certifications"]
         ul
           - data.company.certifications.sort_by { |k| k["id"] }.each_with_index do |certification, index|
             li
               = certification.details
-
-      span[class="certification-detail"]
-        = data.company.certification_detail
 
     div[class="d-none d-md-block col-md-5 address-wrapper"]
       div[class="row"]
