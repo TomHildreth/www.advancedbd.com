@@ -1,7 +1,7 @@
 .details {
   @include box-shadow();
 
-  background: url('#{$image-path}/pages/sustainability/background-bottom.jpg') no-repeat;
+  background: url('#{$image-path}/pages/sustainability/background-bottom.jpg') no-repeat top center;
   padding: 0;
   background-size: cover;
   background-position: top center;
@@ -18,10 +18,14 @@
     @include box-shadow();
 
     background: rgba(230, 233, 242, $backdrop-opacity-darkest);
-    padding: 1rem 1.5rem 0 1.5rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
 
     @include media-breakpoint-up(md) {
       max-width: map-get($grid-breakpoints, "md");
+    }
+
+    @include media-breakpoint-up(maximum) {
+      max-width: map-get($grid-breakpoints, "lg");
     }
 
     ul {
@@ -30,7 +34,9 @@
     }
 
     li {
-      padding-bottom: 1rem;
+      &:not(:last-child) {
+        padding-bottom: 1rem;
+      }
     }
 
     img {
@@ -40,6 +46,10 @@
 
       @include media-breakpoint-up(md) {
         max-width: 675px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: 350px;
       }
     }
 
@@ -69,6 +79,17 @@
             padding-right: 0.5rem;
           }
         }
+      }
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        padding-bottom: 2rem;
       }
     }
   }

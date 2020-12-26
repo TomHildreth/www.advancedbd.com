@@ -22,14 +22,16 @@ section[class="row call-to-action"]
         = data.sustainability.cta.bottom
 
     div[class="row d-none d-md-flex"]
-      div[class="col-7"]
+      div[class="col-7 col-lg-5"]
         span
           = data.sustainability.cta.top
         span
           = data.sustainability.cta.bottom
 
-      div[class="col-5 image-wrapper"]
+      div[class="col-5 col-lg-7 image-wrapper"]
         img[src="#{image_path('pages/sustainability/design.jpg')}"]
+
+
 
 section[class="row statistics"]
   div[class="col-12 mx-auto section-wrapper"]
@@ -51,13 +53,32 @@ section[class="row details"]
         span
           |BUILDING WITH SIPs
 
-    div[class="row"]
+    div[class="row d-lg-none"]
       div[class="col-12 image-wrapper"]
         img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
 
-    div[class="row"]
+    div[class="row d-lg-none"]
       div[class="col-12"]
         ul
           - data.sustainability.details.sort_by { |k| k["id"] }.each_with_index do |value, index|
             li
               = value.description.try(:html_safe)
+
+    div[class="row d-lg-none"]
+      div[class="col-12 image-wrapper"]
+        img[src="#{image_path('pages/sustainability/in-sum.png')}"]
+
+    div[class="row d-none d-lg-flex"]
+      div[class="col-7"]
+        ul
+          - data.sustainability.details.sort_by { |k| k["id"] }.each_with_index do |value, index|
+            li
+              = value.description.try(:html_safe)
+
+      div[class="col-5 image-container"]
+        div[class="row"]
+          div[class="col-12 image-wrapper"]
+            img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
+        div[class="row"]
+          div[class="col-12 image-wrapper"]
+            img[src="#{image_path('pages/sustainability/in-sum.png')}"]

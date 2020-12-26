@@ -15,6 +15,10 @@
       max-width: map-get($grid-breakpoints, "md");
     }
 
+    @include media-breakpoint-up(maximum) {
+      max-width: map-get($grid-breakpoints, "lg");
+    }
+
     .row {
       padding-bottom: 1rem;
     }
@@ -26,6 +30,10 @@
 
       @include media-breakpoint-up(md) {
         max-width: 275px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: 500px;
       }
     }
 
@@ -44,8 +52,11 @@
     }
 
     .header {
+      @include secondary-font();
+
       text-align: center;
       font-weight: bold;
+      font-size: 1.25rem;
       text-transform: uppercase;
     }
   }

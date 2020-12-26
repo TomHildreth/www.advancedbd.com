@@ -28,5 +28,11 @@
         max-width: map-get($grid-breakpoints, "sm");
       }
     }
+
+    @include media-breakpoint-up(lg) {
+      .row {
+        max-width: map-get($grid-breakpoints, "md");
+      }
+    }
   }
 }
