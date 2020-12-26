@@ -1,0 +1,76 @@
+.company {
+  @include box-shadow();
+
+  @include media-breakpoint-up(xs) {
+    background: url('#{$image-path}/pages/index/dark-sharp-edges.png') repeat;
+    padding: 0;
+  }
+
+  .section-wrapper {
+    background: url('#{$image-path}/pages/index/company-background.png') no-repeat bottom right;
+
+    @include media-breakpoint-up(xs) {
+      padding: 0 1rem 1rem 1rem;
+    }
+  }
+
+  .description-cta-wrapper {
+    max-width: map-get($grid-breakpoints, "lg");
+
+    @include media-breakpoint-up(xs) {
+      padding: 1rem 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1rem;
+    }
+
+    .description-cta {
+      @include secondary-font();
+
+      background: rgba(234, 180, 100, $backdrop-opacity-light);
+      color: $color-three;
+      text-transform: uppercase;
+      padding: 1rem;
+    }
+  }
+
+  .description-wrapper {
+    max-width: map-get($grid-breakpoints, "lg");
+    background: rgba(255, 255, 255, $backdrop-opacity-super-light);
+    padding: 1rem 1.5rem;
+    color: $color-black;
+
+    span {
+      display: block;
+    }
+
+    .tilte {
+      text-transform: uppercase;
+    }
+
+    .title,
+    .cta {
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+
+    .certifications {
+      ul {
+        padding-left: 1.25rem;
+      }
+    }
+
+    .address-wrapper {
+      .description {
+        padding-bottom: 1rem;
+      }
+
+      address {
+        display: block;
+        padding: 1rem;
+        background: rgba(255, 255, 255, $backdrop-opacity-light);
+      }
+    }
+  }
+}

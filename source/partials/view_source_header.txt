@@ -1,0 +1,31 @@
+<!--
+Welcome to the www.advancedbd.com website!
+
+             *     ,MMM8&&&.            *
+                  MMMM88&&&&&    .
+                 MMMM88&&&&&&&
+     *           MMM88&&&&&&&&
+                 MMM88&&&&&&&&
+                 'MMM88&&&&&&'
+                   'MMM8&&&'      *
+          |\___/|
+          )     (             .              '
+         =\     /=
+           )===(       *
+          /     \
+          |     |
+         /       \
+         \       /
+  _/\_/\_/\__  _/_/\_/\_/\_/\_/\_/\_/\_/\_/\_
+  |  |  |  |( (  |  |  |  |  |  |  |  |  |  |
+  |  |  |  | ) ) |  |  |  |  |  |  |  |  |  |
+  |  |  |  |(_(  |  |  |  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Asset Credits...
+Ascii Cats : https://user.xmission.com/~emailbox/ascii_cats.htm
+Home Page Call to Action: Kubala Washatko Architects, Inc.
+Subtle Patterns : Always Grey : https://www.toptal.com/designers/subtlepatterns/always-grey/
+Subtle Patterns : Dark Sharp Edges : https://www.toptal.com/designers/subtlepatterns/dark-sharp-edges/
+-->

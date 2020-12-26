@@ -1,0 +1,81 @@
+div[class="row section-container"]
+  div[class="col-12 d-lg-none cta-content"]
+    div[class="row cta-content-about"]
+      div[class="col-12"]
+        span
+          i[class="fas fa-quote-left"]
+        span[class="cta"]
+          = data.components.social.cta
+        span
+          i[class="fas fa-quote-right"]
+      div[class="col-12"]
+        |—
+        =>
+        = data.components.social.ceo
+
+    div[class="row cta-content-details"]
+      div[class="col-12"]
+        div
+          i[class="fas fa-leaf"]
+        div
+          span
+            |Build: Faster. Stronger. Energy Efficient. Green.
+
+    div[class="row d-none cta-content-data"]
+      div[class="col-6"]
+        img[id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.svg')}"]
+      div[class="col-6 products"]
+        div[class="row section-wrapper"]
+          = partial "partials/pages/index/products"
+
+  div[class="col-12 d-none d-lg-block cta-content"]
+    div[class="row cta-content-data"]
+      div[class="col-12"]
+        div[class="row cta-content-about"]
+          div[class="col-12"]
+            span
+              i[class="fas fa-quote-left"]
+            span[class="cta"]
+              = data.components.social.cta
+            span
+              i[class="fas fa-quote-right"]
+          div[class="col-12"]
+            |—
+            =>
+            = data.components.social.ceo
+
+    div[class="row cta-content-data"]
+      div[class="col-6"]
+        div[class="row"]
+          img[id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.svg')}"]
+        div[class="row cta-content-details"]
+            div[class="col-12"]
+              div
+                i[class="fas fa-leaf"]
+              div
+                span
+                  |Build: Faster. Stronger. Energy Efficient. Green.
+      div[class="col-6 products"]
+        div[class="row section-wrapper"]
+          = partial "partials/pages/index/products"
+
+  div[class="col-12 cta-banner"]
+    div[class="row mx-auto cta-background-description"]
+      div[class="col-12 mx-auto"]
+        = link_to("/pages/sustainability/") do
+          u
+            |Learn more about this sustainable structure
+          |: SIPs & Solar, Net Zero Energy, LEED Platinum
+    div[class="row mx-auto cta-banner-description"]
+      div[class="col-12"]
+        div
+          i[class="fas fa-exclamation-circle"]
+        div
+          span
+            |Lost your home in the Colorado or California fires?
+          span
+            u
+              = link_to("/pages/contact/") do
+                |we can help you
+            =>
+            |rebuild it quickly!

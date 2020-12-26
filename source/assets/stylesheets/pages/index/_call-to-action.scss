@@ -1,0 +1,295 @@
+.call-to-action {
+  background: url('#{$image-path}/pages/index/cta-background.jpg') no-repeat;
+  padding: 0;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+
+  @include media-breakpoint-up(xs) {
+    height: calc((var(--vh, 1vh) * 100) - 70px);
+  }
+
+  @include media-breakpoint-up(sm) {
+    height: calc((var(--vh, 1vh) * 100) - 147px);
+  }
+
+  @include media-breakpoint-up(md) {
+    height: calc((var(--vh, 1vh) * 100) - 125px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: calc((var(--vh, 1vh) * 100) - 69px);
+  }
+
+  @media only screen
+    and (min-device-width: 1024px)
+    and (max-device-width: 1366px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+    height: auto;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .row {
+      flex: 1;
+      display: flex;
+    }
+
+    .section-container {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-content {
+      @include media-breakpoint-up(xl) {
+        max-width: map-get($grid-breakpoints, "xl");
+      }
+
+      .cta-content-about {
+        @include impact-font();
+        text-align: left;
+
+        font-size: 0.75rem;
+        @media (min-height: $minimum-height) {
+          font-size: 1rem;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        .col-12 {
+          @include media-breakpoint-up(xs) {
+            background: rgba(234, 180, 100, $backdrop-opacity-dark);
+          }
+
+          @include media-breakpoint-up(md) {
+            background: none;
+          }
+
+          &:first-child {
+            padding: 1rem 1.5rem 0.5rem 1.5rem;
+          }
+          &:last-child {
+            padding: 0.5rem 1.5rem 1rem 1.5rem;
+          }
+        }
+
+        .fa-quote-left,
+        .fa-quote-right {
+          font-size: 1.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        .fa-quote-left {
+          padding-right: 0.5rem;
+        }
+
+        .fa-quote-right {
+          padding-left: 0.5rem;
+        }
+      }
+
+      .cta-content-details {
+        @include impact-font();
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        text-transform: uppercase;
+
+        font-size: 0.75rem;
+        @media (min-height: $minimum-height) {
+          font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(xs) {
+          background: rgba(255, 255, 255, $backdrop-opacity-darkest);
+          color: $color-green;
+          width: initial;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 457px;
+        }
+
+        .col-12 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fa-leaf {
+            font-size: 1.25rem;
+            @media (min-height: $minimum-height) {
+              font-size: 2rem;
+            }
+
+            @include media-breakpoint-up(xs) {
+              margin-right: 1rem;
+            }
+          }
+
+          @include media-breakpoint-up(xs) {
+            span {
+              display: inline;
+              padding-right: 0.5rem;
+            }
+          }
+
+          @include media-breakpoint-up(sm) {
+            span {
+              display: block;
+            }
+          }
+
+          @include media-breakpoint-only(md) {
+            span {
+              display: block;
+            }
+          }
+
+          @include media-breakpoint-up(lg) {
+            span {
+              display: inline;
+            }
+          }
+        }
+      }
+
+      .cta-content-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          display: flex !important;
+
+          #sippayoffcomparison {
+            height: 200px;
+            width: 325px;
+          }
+
+          .cta-content-sun,
+          .cta-content-water {
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          align-items: normal;
+
+          #sippayoffcomparison {
+            height: 275px;
+            width: 457px;
+          }
+        }
+      }
+    }
+
+    .cta-banner {
+      align-items: flex-end;
+      margin-top: auto;
+      color: $color-black;
+      text-transform: uppercase;
+      padding: 0;
+
+      @include secondary-font();
+
+      font-size: 0.75rem;
+      @media (min-height: $minimum-height) {
+        font-size: 1rem;
+      }
+
+      .fa-exclamation-circle {
+        font-size: 1.25rem;
+        @media (min-height: $minimum-height) {
+          font-size: 1.5rem;
+        }
+
+        @include media-breakpoint-up(xs) {
+          margin-right: 1rem;
+        }
+      }
+
+      .cta-background-description {
+        background: rgba(255, 255, 255,$backdrop-opacity-super-light);
+        padding: 1rem;
+
+        a {
+          color: $color-black;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+        @include media-breakpoint-up(xs) {
+          .col-12 {
+            max-width: map-get($grid-breakpoints, "sm");
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          .col-12 {
+            max-width: map-get($grid-breakpoints, "maximum");
+          }
+        }
+      }
+
+      .cta-banner-description {
+        background: rgba(255, 255, 255, $backdrop-opacity-dark);
+        padding: 1.5rem 1rem;
+
+        a {
+          color: $color-black;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+      }
+
+      .col-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(xs) {
+          span {
+            display: inline;
+            padding-right: 0.5rem;
+          }
+        }
+
+        @include media-breakpoint-up(sm) {
+          span {
+            display: block;
+          }
+        }
+
+        @include media-breakpoint-only(md) {
+          span {
+            display: block;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          span {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}

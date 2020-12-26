@@ -1,0 +1,85 @@
+.products {
+  @include media-breakpoint-up(xs) {
+    background: url('#{$image-path}/pages/index/always-grey.png') repeat;
+    padding: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    background: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: none;
+    padding-top: 0;
+  }
+
+  .section-wrapper {
+    .header {
+      a {
+        color: $color-black;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @include media-breakpoint-up(xs) {
+        background: rgba(234, 180, 100, $backdrop-opacity-none);
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: bold;
+        color: $color-white;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 0.75rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        text-align: center;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .body {
+      @include media-breakpoint-up(xs) {
+        background: rgba(255, 255, 255, $backdrop-opacity-none);
+        text-align: left;
+
+        .row {
+          padding: 1rem 1rem 0 0.5rem;
+        }
+
+        .row:last-of-type {
+          padding-bottom: 1rem;
+        }
+
+        .col-2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          #fire,
+          #sun,
+          #rain {
+            width: 50px;
+          }
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 0.75rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+div[class="col-12 mx-auto footer-wrapper"]
+  div[class="row"]
+    div[class="col-12 col-md-7 d-md-none description"]
+      |Contact Us
+    div[class="col-12 col-md-5 p-0 d-md-none"]
+      address
+        = data.components.social.formalname
+        br
+        = data.components.address.street
+        br
+        = data.components.address.city_state_zip
+        br
+        |Mobile:
+        =>
+        = data.components.social.phone
+        br
+        a[href="mailto:#{data.components.social.email}"]
+          = data.components.social.email
+    div[class="col-12 col-md-7 p-0 mx-auto copyright"]
+      |&#169;
+      =>
+      = data.company.copyright
+      =>
+      |-
+      =>
+      = data.components.social.formalname

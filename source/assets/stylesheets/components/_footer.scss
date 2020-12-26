@@ -1,0 +1,45 @@
+.footer {
+  padding: 1rem;
+
+  .footer-wrapper {
+    padding-top: 0.5rem;
+
+    @include media-breakpoint-up(xs) {
+      max-width: initial;
+
+      .description,
+      .copyright {
+        padding-bottom: 1rem;
+      }
+
+      .description {
+        padding: 0 0 1rem 0;
+        text-transform: uppercase;
+      }
+
+      .copyright {
+        @include secondary-font();
+
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 275px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .copyright {
+        max-width: initial;
+      }
+    }
+
+    span {
+      display: block;
+    }
+
+    address {
+      display: block;
+      padding: 1rem;
+      background: rgba(255, 255, 255, $backdrop-opacity-light);
+    }
+  }
+}

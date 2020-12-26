@@ -1,0 +1,133 @@
+.projects {
+  @include box-shadow();
+
+  background: url('#{$image-path}/pages/index/projects-background.jpg') no-repeat;
+  padding: 1rem 0;
+  background-size: cover;
+  background-position: top center;
+
+  .projects-wrapper {
+    max-width: map-get($grid-breakpoints, "lg");
+
+    @include media-breakpoint-up(xs) {
+      padding: 0 0 1rem 0;
+
+      #projects-carousel {
+        background: rgba(230, 233, 242, $backdrop-opacity-darkest);
+
+        .carousel-item {
+          transition-duration: 0.5s;
+        }
+
+        .carousel-inner {
+          padding-bottom: 2rem;
+        }
+
+        .carousel-image{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 110px;
+
+          img {
+            max-width: 345px;
+          }
+        }
+
+        .carousel-caption {
+          max-width: 500px;
+          position: relative;
+          left: 0;
+          top: 0;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem 1.5rem 2rem 1.5rem;
+
+          span {
+            display: block;
+          }
+
+          .title {
+            @include impact-font();
+
+            padding-bottom: 0.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $color-five;
+          }
+
+          .details {
+            color: $color-one;
+          }
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+          opacity: initial;
+          z-index: $zindex-tooltip;
+          display: block;
+          padding-top: 5rem;
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+          background-image: none;
+          width: 30px;
+          height: 47px;
+          background: rgba(230, 233, 242, $backdrop-opacity-darkest);
+          -moz-border-radius: 70px;
+          -webkit-border-radius: 70px;
+          border-radius: 70px;
+        }
+
+        .carousel-control-next-icon:after,
+        .carousel-control-prev-icon:after {
+          font-size: 2rem;
+          color: $color-five;
+        }
+
+        .carousel-control-next-icon:after {
+          content: "\276F";
+        }
+
+        .carousel-control-prev-icon:after {
+          content: "\276E";
+        }
+
+        .carousel-indicators li {
+          background-color: $color-five;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      #projects-carousel {
+        min-height: 450px;
+
+        .carousel-caption {
+          max-width: initial;
+        }
+        .carousel-image {
+          img {
+            max-width: 1000px;
+          }
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+          padding-top: 20rem;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      min-width: map-get($grid-breakpoints, "lg");
+
+      #projects-carousel {
+        min-height: 400px;
+      }
+    }
+  }
+}
