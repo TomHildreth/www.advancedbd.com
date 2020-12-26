@@ -1,4 +1,10 @@
 #sustainability {
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
   .image-wrapper {
     display: flex;
     align-items: center;
