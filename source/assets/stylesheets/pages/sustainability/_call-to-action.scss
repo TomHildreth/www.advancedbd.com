@@ -1,0 +1,28 @@
+.call-to-action {
+  background: url('#{$image-path}/pages/sustainability/background-top.jpg') no-repeat;
+  padding: 0;
+  background-size: cover;
+  background-position: top center;
+  padding: 2rem 1rem 2rem 1rem;
+
+  .section-wrapper {
+    @include box-shadow();
+
+    background: rgba(230, 233, 242, $backdrop-opacity-darkest);
+    padding: 1rem 1rem 0 1rem;
+
+    .row {
+      padding-bottom: 1rem;
+    }
+
+    img {
+      max-width: 315px;
+    }
+
+    .header {
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}

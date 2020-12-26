@@ -7,6 +7,10 @@
     @include media-breakpoint-up(xs) {
       max-width: initial;
 
+      .description {
+        text-align: center;
+      }
+
       .description,
       .copyright {
         padding-bottom: 1rem;

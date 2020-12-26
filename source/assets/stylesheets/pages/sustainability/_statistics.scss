@@ -1,0 +1,33 @@
+.statistics {
+  @include box-shadow-all-sides();
+
+  padding: 0;
+
+  .section-wrapper {
+    @include box-shadow();
+
+    background: rgba(234, 180, 100, $backdrop-opacity-dark);
+    padding: 1rem 1.5rem 0 1.5rem;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding-bottom: 1rem;
+    }
+
+    strong {
+      color: $color-white;
+    }
+
+    @include media-breakpoint-up(xs) {
+      max-width: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      max-width: 450px;
+    }
+  }
+}

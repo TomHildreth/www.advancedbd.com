@@ -3,4 +3,48 @@ id: sustainability
 layout: page
 ---
 
-p SUSTAINABILITY PAGE
+section[class="row call-to-action"]
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      div[class="col-12 header"]
+        |Sustainability
+    div[class="row"]
+      div[class="col-12"]
+        = data.sustainability.cta.top
+
+    div[class="row"]
+      div[class="col-12"]
+        img[class="d-block" src="#{image_path('pages/sustainability/design.jpg')}"]
+
+    div[class="row"]
+      div[class="col-12"]
+        = data.sustainability.cta.bottom
+
+section[class="row statistics"]
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      div[class="col-12"]
+        ul
+          - data.sustainability.statistics.sort_by { |k| k["id"] }.reverse.each_with_index do |value, index|
+            li
+              = value.description.try(:html_safe)
+
+section[class="row details"]
+  div[class="col-12 mx-auto section-wrapper"]
+    div[class="row"]
+      div[class="col-12 header"]
+        span
+          |ADVANTAGES OF
+        span
+          |BUILDING WITH SIPs
+
+    div[class="row"]
+      div[class="col-12"]
+        img[class="d-block" src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
+
+    div[class="row"]
+      div[class="col-12"]
+        ul
+          - data.sustainability.details.sort_by { |k| k["id"] }.reverse.each_with_index do |value, index|
+            li
+              = value.description.try(:html_safe)
