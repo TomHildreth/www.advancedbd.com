@@ -121,6 +121,14 @@
       font-weight: bold;
       font-size: 1.25rem;
       text-transform: uppercase;
+
+      @include media-breakpoint-up(lg) {
+        span {
+          &:first-child {
+            padding-right: 0.5rem;
+          }
+        }
+      }
     }
   }
 }
