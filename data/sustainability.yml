@@ -1,7 +1,9 @@
 copyright: March 2003
 
 cta:
-  top: "Starts with design and selecting building envelop materials that are friendly to the environment, reduce waste, maximize energy efficiency, and have a long useful life."
+  top:
+    xs: Starts with design and selecting building envelop materials that are friendly to the environment, reduce waste, maximize energy efficiency, and have a long useful life.
+    md: <strong>Sustainability</strong> starts with design and selecting building envelop materials that are friendly to the environment, reduce waste, maximize energy efficiency, and have a long useful life.
   bottom: Orientated Strand Board "OSB" (that form both sides of the Structural Insulated Panels or SIPs) are harvested from three-to-four-year-old plantation 'renewable' growth hardwoods utilizing 92% of the tree and then replanted for the next crop. Whereas wood studs are cut from old-growth timber utilizing 64% of the tree.
 
 statistics:
