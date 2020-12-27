@@ -1,8 +1,8 @@
 copyright: March 2003
 
 cta:
-  top: "Starts with design and selecting building envelop materials & systems that are friendly to the environment, reduce waste, maximize energy efficiency, and have a long useful life."
-  bottom: Orientated Strand Board "OSB" (that form both sides of the Structural Insulated Panels or SIPs) are harvested from three-to-four-year-old plantation 'renewable' growth hardwoods utilizing 92% of the tree and then replanted for the next crop. Whereas studs are cut from old-growth timber utilizing 64% of the tree.
+  top: "Starts with design and selecting building envelop materials that are friendly to the environment, reduce waste, maximize energy efficiency, and have a long useful life."
+  bottom: Orientated Strand Board "OSB" (that form both sides of the Structural Insulated Panels or SIPs) are harvested from three-to-four-year-old plantation 'renewable' growth hardwoods utilizing 92% of the tree and then replanted for the next crop. Whereas wood studs are cut from old-growth timber utilizing 64% of the tree.
 
 statistics:
   -
@@ -10,7 +10,7 @@ statistics:
     description: <strong>SIPs</strong> reduce wood waste by 78%.
   -
     id: 2
-    description: <strong>SIPs</strong> eliminate conventional use of studs for framing which reduces the number of trees cut by 80%.
+    description: <strong>SIPs</strong> eliminate conventional use of wood studs for framing which reduces the number of trees cut by 80%.
   -
     id: 3
     description: <strong>SIP</strong> insulation uses closed-cell polystyrene foam beads filled with air that is 60% much more energy efficient than fiberglass or cellulous insulation.
@@ -18,7 +18,7 @@ statistics:
 details:
   -
     id: 1
-    description: "<strong>Energy Efficiency</strong>: According to the Federal Lab in Oak Ridge, Tenn. SIPs are 60% more energy efficient than conventional 2x6 framed structures which reduces utility cost by 36%."
+    description: "<strong>Energy Efficiency</strong>: According to the Federal Lab in Oak Ridge, Tenn. SIPs are 60% more energy efficient than conventional 2x6 wood stud framed structures which reduces utility cost by 36%."
   -
     id: 2
     description: "<strong>Energy Savings Payback</strong>: After 1-1/2-years your investment in SIPs is paid off with or without Solar. Plus every day your investment in SIPs pays you by reducing your utility cost."
@@ -30,7 +30,7 @@ details:
     description: "<strong>Environment</strong>: SIPs use environmentally friendly materials."
   -
     id: 5
-    description: "<strong>Stronger</strong>: SIPs are 46% stronger than 2x lumber construction and with additional fasteners can be engineered to withstand Category-5 hurricane winds of 158 mph."
+    description: "<strong>Stronger</strong>: SIPs are 46% stronger than 2x6 wood stud framed lumber construction and with additional fasteners can be engineered to withstand Category-5 hurricane winds of 158 mph."
   -
     id: 6
     description: "<strong>Fire Resistance</strong>: 1-hour fire ratings that will lower cost of insurance."

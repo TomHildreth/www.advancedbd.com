@@ -24,12 +24,8 @@ div[class="col-12 mx-auto description-wrapper"]
           address
             = data.components.social.formalname
             br
-            = data.components.address.street
+            = data.components.address.city
             br
-            = data.components.address.city_state_zip
-            br
-            |Mobile:
-            =>
             = data.components.social.phone
             br
             a[href="mailto:#{data.components.social.email}"]
