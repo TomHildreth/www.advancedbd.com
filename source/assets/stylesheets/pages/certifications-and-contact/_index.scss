@@ -1,0 +1,92 @@
+#certifications-and-contact{
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .certifications-and-contact-wrapper {
+    @include box-shadow();
+
+    background: url('#{$image-path}/pages/certifications-and-contact/background.jpg') no-repeat;
+    padding: 0;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+
+    span {
+      display: block;
+    }
+
+    .title {
+      @include secondary-font();
+
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+
+    .title,
+    .cta {
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+
+    .certifications {
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        &:not(:last-child) {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .certifications-wrapper {
+      max-width: map-get($grid-breakpoints, "lg");
+      background: rgba(255, 255, 255, $backdrop-opacity-dark);
+      padding: 1rem 2rem;
+
+      .description {
+        @include secondary-font();
+
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+
+      .address-wrapper {
+        padding-top: 1rem;
+
+        address {
+          display: block;
+          padding: 1rem;
+          background: rgba(234, 180, 100, $backdrop-opacity-light);
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        #sippayoffcomparison {
+          height: 200px;
+          width: 325px;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        #sippayoffcomparison {
+          height: 250px;
+          width: 350px;
+        }
+      }
+    }
+  }
+}

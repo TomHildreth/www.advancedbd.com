@@ -133,7 +133,7 @@
 
         li {
           @include media-breakpoint-up(xs) {
-            padding: 1rem 1.5rem;
+            padding: 1rem 0.5rem;
 
             &:first-child {
               border-top: 0.15rem solid $border-color;
@@ -156,6 +156,12 @@
             &:last-child {
               border-bottom: 0.15rem solid $border-color;
             }
+          }
+
+          @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 
           @include media-breakpoint-up(lg) {
