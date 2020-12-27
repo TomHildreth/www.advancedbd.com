@@ -78,7 +78,7 @@
           max-width: 675px;
         }
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           padding-top: 0;
           max-width: 500px;
         }
