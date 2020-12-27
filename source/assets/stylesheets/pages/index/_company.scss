@@ -45,7 +45,10 @@
       display: block;
     }
 
-    .tilte {
+    .title {
+      @include secondary-font();
+
+      font-size: 1.25rem;
       text-transform: uppercase;
     }
 
@@ -59,10 +62,18 @@
       ul {
         padding-left: 1.25rem;
       }
+
+      li {
+        padding-bottom: 0.5rem;
+      }
     }
 
     .address-wrapper {
       .description {
+        @include secondary-font();
+
+        font-size: 1.25rem;
+        text-transform: uppercase;
         padding-bottom: 1rem;
       }
 
