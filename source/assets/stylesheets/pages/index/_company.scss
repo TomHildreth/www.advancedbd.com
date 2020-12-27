@@ -37,7 +37,7 @@
 
   .description-wrapper {
     max-width: map-get($grid-breakpoints, "lg");
-    background: rgba(255, 255, 255, $backdrop-opacity-super-light);
+    background: rgba(255, 255, 255, $backdrop-opacity-light);
     padding: 1rem 1.5rem;
     color: $color-black;
 
