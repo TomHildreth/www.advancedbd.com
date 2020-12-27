@@ -1,6 +1,17 @@
 #sustainability {
-  background: url('#{$image-path}/pages/sustainability/background.jpg') no-repeat;
-  padding: 0;
-  background-size: cover;
-  background-position: top center;
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @import "pages/sustainability/call-to-action";
+  @import "pages/sustainability/statistics";
+  @import "pages/sustainability/details";
 }

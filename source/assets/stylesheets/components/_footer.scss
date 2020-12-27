@@ -7,6 +7,14 @@
     @include media-breakpoint-up(xs) {
       max-width: initial;
 
+      .description {
+        @include secondary-font();
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+
       .description,
       .copyright {
         padding-bottom: 1rem;

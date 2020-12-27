@@ -20,6 +20,13 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
       div[class="collapse navbar-collapse" id="navbarCollapse"]
         ul[class="navbar-nav flex-fill"]
           ruby:
+            active_class = current_page.data.id == 'haiti-earthquake' ? 'active' : ''
+          li[class="nav-item flex-fill #{active_class}"]
+            = link_to("/pages/haiti-earthquake/", class: "nav-link") do
+                span[class="nav-description"]
+                  |Haiti Earthquake
+
+          ruby:
             active_class = current_page.data.id == 'sustainability' ? 'active' : ''
           li[class="nav-item flex-fill #{active_class}"]
             = link_to("/pages/sustainability/", class: "nav-link") do
@@ -33,12 +40,7 @@ nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
                 span[class="nav-description"]
                   |Roof & Wallguard
 
-          ruby:
-            active_class = current_page.data.id == 'projects' ? 'active' : ''
-          li[class="nav-item flex-fill #{active_class}"]
-            = link_to("/pages/projects/", class: "nav-link") do
-                span[class="nav-description"]
-                  |Projects
+
 
           ruby:
             active_class = current_page.data.id == 'contact' ? 'active' : ''

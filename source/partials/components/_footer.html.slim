@@ -6,17 +6,13 @@ div[class="col-12 mx-auto footer-wrapper"]
       address
         = data.components.social.formalname
         br
-        = data.components.address.street
+        = data.components.address.city
         br
-        = data.components.address.city_state_zip
-        br
-        |Mobile:
-        =>
         = data.components.social.phone
         br
         a[href="mailto:#{data.components.social.email}"]
           = data.components.social.email
-    div[class="col-12 col-md-7 p-0 mx-auto copyright"]
+    div[class="col-12 col-md-12 p-0 mx-auto copyright"]
       |&#169;
       =>
       = data.company.copyright

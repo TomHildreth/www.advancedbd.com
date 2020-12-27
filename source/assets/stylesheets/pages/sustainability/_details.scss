@@ -1,0 +1,77 @@
+.details {
+  @include box-shadow();
+
+  background: url('#{$image-path}/pages/sustainability/background-bottom.jpg') no-repeat top center;
+  padding: 0;
+  background-size: cover;
+  background-position: top center;
+
+  @include media-breakpoint-up(xs) {
+    padding: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
+
+  .section-wrapper {
+    @include box-shadow();
+
+    background: rgba(230, 233, 242, $backdrop-opacity-darkest);
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      max-width: map-get($grid-breakpoints, "md");
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 1rem 0 0 0;
+    }
+
+    li {
+      &:not(:last-child) {
+        padding-bottom: 1rem;
+      }
+    }
+
+    img {
+      @include media-breakpoint-up(xs) {
+        max-width: 300px;
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: 675px;
+      }
+    }
+
+    strong {
+      color: $color-five;
+    }
+
+    .header {
+      @include secondary-font();
+
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      font-size: 1.25rem;
+
+      @include media-breakpoint-up(xs) {
+        span {
+          display: block;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        span {
+          display: initial;
+
+          &:first-child {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
