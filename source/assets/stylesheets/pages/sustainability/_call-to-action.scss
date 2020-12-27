@@ -70,6 +70,12 @@
     .d-md-flex {
       .col-lg-5 {
         padding-left: 2rem;
+
+        span {
+          &:first-child {
+            padding-right: 0.5rem;
+          }
+        }
       }
 
       img {
