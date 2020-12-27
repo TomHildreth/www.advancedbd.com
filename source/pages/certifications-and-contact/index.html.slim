@@ -1,0 +1,38 @@
+---
+id: certifications-and-contact
+layout: page
+---
+
+section[class="row flex-fill"]
+  div[class="col-12 mx-auto certifications-and-contact-wrapper"]
+    div[class="row"]
+      div[class="col-12 mx-auto certifications-wrapper"]
+        div[class="row"]
+          div[class="col-12 d-none d-md-block col-md-6 address-wrapper"]
+            div[class="row"]
+              div[class="col-12 description"]
+                |Contact Us
+              div[class="col-12 address-wrapper"]
+                address
+                  = data.components.social.formalname
+                  br
+                  = data.components.address.city
+                  br
+                  = data.components.social.phone
+                  br
+                  a[href="mailto:#{data.components.social.email}"]
+                    = data.components.social.email
+          div[class="col-12 d-none d-md-block col-md-6"]
+            img[class="float-right" id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.svg')}"]
+
+          div[class="col-12"]
+            span[class="title"]
+              |Certifications
+            span[class="cta"]
+              |"Not all SIPs are created equal!"
+          div[class="col-12"]
+            span[class="certifications"]
+              ul
+                - data.company.certifications.sort_by { |k| k["id"] }.each_with_index do |certification, index|
+                  li
+                    = certification.details
