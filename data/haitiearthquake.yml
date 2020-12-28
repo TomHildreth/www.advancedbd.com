@@ -20,7 +20,7 @@ proposals:
       description: The Home Depot® showers, sinks, cabinets.
     -
       id: 3
-      description: Mike Hi Solar.
+      description: Mike High Solar.
     -
       id: 4
       description: American Mobile Kitchens.
@@ -29,4 +29,4 @@ proposals:
       description: Thetford composting toilets.
     -
       id: 6
-      description: Coleman portable propane stoves and cots beds.
+      description: Coleman portable propane stoves and foldable beds.
