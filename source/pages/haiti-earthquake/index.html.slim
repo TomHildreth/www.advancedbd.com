@@ -2,5 +2,37 @@
 id: haiti-earthquake
 layout: page
 ---
+section[class="row flex-fill"]
+  div[class="col-12 mx-auto haiti-earthquake-wrapper"]
+    div[class="row"]
+      div[class="col-12 title"]
+        span
+          |Haiti 2010 Earthquake
+        span
+          |Disaster Proposal
+      div[class="col-12 cta"]
+        = data.haitiearthquake.cta
 
-p HAITI EARTHQUAKE PAGE
+      div[class="col-12 proposal"]
+        |Our proposal included:
+      div[class="col-12 our-proposal"]
+        ul
+          - data.haitiearthquake.proposals.us.sort_by { |k| k["id"] }.each_with_index do |proposal, index|
+            li
+              = proposal.description
+
+      div[class="col-12 proposal"]
+        |Advanced Building & Development mobilized these Haiti Relief Partners:
+      div[class="col-12 partner-proposal"]
+        ul
+          - data.haitiearthquake.proposals.partners.sort_by { |k| k["id"] }.each_with_index do |proposal, index|
+            li
+              = proposal.description
+
+      div[class="col-12"]
+        div[class="row video-wrapper"]
+          div[class="col-12"]
+            | ABD selected TEMO Inc. as one of our partners for the 2010 Haiti earthquake disaster relief project. The video was included in our presentation.
+          div[class="col-12"]
+            div[class="embed-responsive embed-responsive-16by9"]
+              iframe[class="embed-responsive-item" src="#{data.haitiearthquake.video}?rel=0" allowfullscreen]
