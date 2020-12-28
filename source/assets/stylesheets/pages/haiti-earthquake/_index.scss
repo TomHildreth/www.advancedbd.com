@@ -7,11 +7,12 @@
     background-size: cover;
     background-position: top center;
     min-height: 100vh;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
 
-    .row {
+    .haiti-earthquake-details-wrapper {
+      max-width: map-get($grid-breakpoints, "lg");
       background: rgba(255, 255, 255, $backdrop-opacity-darkest);
-      padding: 2rem 1.5rem;
+      padding: 2rem 1rem;
     }
 
     .title {
@@ -30,6 +31,10 @@
       @include media-breakpoint-up(md) {
         span {
           display: initial;
+
+          &:first-child {
+            padding-right: 0.5rem;
+          }
         }
       }
     }
