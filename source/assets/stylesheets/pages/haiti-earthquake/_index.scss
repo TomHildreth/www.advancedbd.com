@@ -1,6 +1,82 @@
 #haiti-earthquake {
-  background: url('#{$image-path}/pages/haiti-earthquake/background.jpg') no-repeat;
-  padding: 0;
-  background-size: cover;
-  background-position: top center;
+  .haiti-earthquake-wrapper {
+    @include box-shadow();
+
+    background: url('#{$image-path}/pages/haiti-earthquake/background.jpg') no-repeat;
+    padding: 0;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+
+    .haiti-earthquake-details-wrapper {
+      max-width: map-get($grid-breakpoints, "lg");
+      background: rgba(255, 255, 255, $backdrop-opacity-darkest);
+      padding: 2rem 1rem;
+    }
+
+    .title {
+      @include secondary-font();
+
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      @include media-breakpoint-up(xs) {
+        span {
+          display: block;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        span {
+          display: initial;
+
+          &:first-child {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .title,
+    .cta {
+      padding-bottom: 1rem;
+    }
+
+    .proposal {
+      text-transform: uppercase;
+    }
+
+    .proposal,
+    .video-wrapper {
+      color: $color-five;
+      font-weight: bold;
+    }
+
+    .our-proposal,
+    .partner-proposal {
+      ul {
+        padding: 0 0 0 1rem;
+      }
+
+      li {
+        &:first-child {
+          padding-top: 0.5rem;
+        }
+
+        &:not(:last-child) {
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .video-wrapper {
+      padding: 0;
+
+      .col-12 {
+        padding: 1rem;
+      }
+    }
+  }
 }
