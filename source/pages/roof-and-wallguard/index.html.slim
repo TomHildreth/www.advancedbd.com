@@ -2,5 +2,64 @@
 id: roof-and-wallguard
 layout: page
 ---
+section[class="row flex-fill"]
+  div[class="col-12 mx-auto roof-and-wallguard-wrapper"]
+    div[class="row"]
+      div[class="col-12"]
+        div[class="row mx-auto roof-and-wallguard-details-wrapper"]
+          div[class="col-12 title"]
+            span
+              |WallGuard & RoofGuard
+            span
+              |Applications
+          div[class="col-12 cta"]
+            = data.roofandwallguard.cta
 
-p ROOF AND WALLGUARD PAGE
+          div[class="col-12 image-wrapper"]
+            img[src="#{image_path('pages/roof-and-wallguard/marriot.png')}"]
+
+          div[class="col-12 protections"]
+            div[class="row"]
+              div[class="col-12 title"]
+                |Protections
+            div[class="row"]
+              ul
+                - data.roofandwallguard.protections.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                  li
+                    = value.description.try(:html_safe)
+          div[class="col-12 image-wrapper"]
+            img[src="#{image_path('pages/roof-and-wallguard/seattle.png')}"]
+
+          div[class="col-12"]
+            div[class="row"]
+              div[class="col-12 col-md-6 options"]
+                div[class="row"]
+                  div[class="col-12 title"]
+                    |Options
+                div[class="row"]
+                  ul
+                    - data.roofandwallguard.product_options.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                      li
+                        = value.description.try(:html_safe)
+              div[class="col-12 col-md-6 maintenance"]
+                div[class="row"]
+                  div[class="col-12 title"]
+                    |Maintenance
+                div[class="row"]
+                  ul
+                    - data.roofandwallguard.maintenance.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                      li
+                        = value.description.try(:html_safe)
+
+          div[class="col-12 image-wrapper"]
+            img[src="#{image_path('pages/roof-and-wallguard/mall.png')}"]
+
+          div[class="col-12 applications"]
+            div[class="row"]
+              div[class="col-12 title"]
+                |Applications
+            div[class="row"]
+              ul
+                - data.roofandwallguard.applications.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                  li
+                    = value.description.try(:html_safe)

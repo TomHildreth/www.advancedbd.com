@@ -1,0 +1,45 @@
+cta: Advanced Building & Development (ABD) has exclusive rights from Canadian Innovative Coatings (CIC) to market their WallGuard and RoofGuard products in the U.S. and Canada.
+
+protections:
+  -
+    id: 1
+    description: "<strong>FIRE</strong>: Spray-on WallGuard & RoofGuard .16\" (4 mm) coating, and Fiber Cement Board (FCB) for fire protection of siding earned a rating of \"Non-Combustible\" i.e., did not support flame spread or fire penetration during 35-minute fire test reaching 2,500 F."
+  -
+    id: 2
+    description: "<strong>MOISTURE</strong>: Passed 4-year water resistance test for wind driven rain and snow (TT-C-555B-3.3.3), yet the membrane is permeable (breathable) allowing interior water vapor to escape, \"similar house wraps or waterproof Gore-Tex garments\". Resistant to fungus, mold, and mildew."
+  -
+    id: 3
+    description: "<strong>SOLAR</strong>: Elongation: 600%+ at 77 F. with 100% memory retention, and has 20-year warranty."
+  -
+    id: 4
+    description: "<strong>SOLAR</strong>: Accelerated Weathering and Solar Exposure: After 500 hours (equivalent to 4 years) of testing, membrane showed no evidence of checking, cracking, chalking or loss of coating."
+  -
+    id: 5
+    description: "<strong>SOLAR</strong>: Insulation - Increases insulation R-4.6."
+
+product_options:
+  -
+    id: 1
+    description: "<strong>Coolor</strong>: 1,400 choices."
+  -
+    id: 2
+    description: "<strong>Coating Textures</strong>: Stucco or Flat"
+
+maintenance:
+  -
+    id: 1
+    description: <strong>Clean</strong> by washing off with garden hose.
+  -
+    id: 2
+    description: <strong>Repair</strong> any damage with paintbrush or roller application of product.
+
+applications:
+  -
+    id: 1
+    description: <strong>Exterior</strong> fire protection.
+  -
+    id: 2
+    description: <strong>WallGuard</strong> can be applied over and repair cracked stucco and roof covering.
+  -
+    id: 3
+    description: <strong>WallGuard</strong> can be applied over EIFS (Exterior Insulated Finish Systems) where moisture has penetrated, and remediation is needed for mold and mildew.
