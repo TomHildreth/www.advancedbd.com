@@ -30,6 +30,7 @@ end
 
 def add_content_to_source(postion:, view_source_file:)
   Dir.glob('build/**/*.html').map(&File.method(:realpath)).each do |path|
+    return if path.include?('404.html')
     File.write(path, add_to_source(postion: postion,
                                    content: File.read(path),
                                    view_source_file: view_source_file))
