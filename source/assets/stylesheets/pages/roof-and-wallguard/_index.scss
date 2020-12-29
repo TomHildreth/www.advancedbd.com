@@ -87,13 +87,26 @@
     .applications {
       ul {
         list-style-type: none;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0 0.5rem;
       }
 
       li {
         &:not(:last-child) {
           padding-bottom: 1rem;
         }
+      }
+    }
+
+    .video-wrapper {
+      @include secondary-font();
+
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      padding: 0;
+      color: $color-five;
+
+      .col-12 {
+        padding: 0.5rem;
       }
     }
   }

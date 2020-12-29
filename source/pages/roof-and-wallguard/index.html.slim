@@ -63,3 +63,11 @@ section[class="row flex-fill"]
                 - data.roofandwallguard.applications.sort_by { |k| k["id"] }.each_with_index do |value, index|
                   li
                     = value.description.try(:html_safe)
+
+          div[class="col-12"]
+            div[class="row video-wrapper"]
+              div[class="col-12"]
+                | WallGuard Fire Test that reached 2,500 F.
+              div[class="col-12"]
+                div[class="embed-responsive embed-responsive-16by9"]
+                  iframe[class="embed-responsive-item" src="#{data.roofandwallguard.video}?rel=0" allowfullscreen]

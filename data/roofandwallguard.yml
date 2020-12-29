@@ -1,5 +1,7 @@
 cta: Advanced Building & Development (ABD) has exclusive rights from Canadian Innovative Coatings (CIC) to market their WallGuard and RoofGuard products in the U.S. and Canada.
 
+video: https://www.youtube.com/embed/hYW-jjqktog
+
 protections:
   -
     id: 1
@@ -15,7 +17,7 @@ protections:
     description: "<strong>SOLAR</strong>: Accelerated Weathering and Solar Exposure: After 500 hours (equivalent to 4 years) of testing, membrane showed no evidence of checking, cracking, chalking or loss of coating."
   -
     id: 5
-    description: "<strong>INSULATION</strong>: Increases R-4.6."
+    description: "<strong>INSULATION</strong>: Increases to R-4.6."
 
 product_options:
   -
@@ -28,7 +30,7 @@ product_options:
 maintenance:
   -
     id: 1
-    description: <strong>Clean</strong> by washing off with garden hose.
+    description: <strong>Clean</strong> by washing off with a garden hose.
   -
     id: 2
     description: <strong>Repair</strong> any damage with paintbrush or roller application of product.
