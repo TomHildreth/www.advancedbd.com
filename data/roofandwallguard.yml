@@ -15,7 +15,7 @@ protections:
     description: "<strong>SOLAR</strong>: Accelerated Weathering and Solar Exposure: After 500 hours (equivalent to 4 years) of testing, membrane showed no evidence of checking, cracking, chalking or loss of coating."
   -
     id: 5
-    description: "<strong>SOLAR</strong>: Insulation - Increases insulation R-4.6."
+    description: "<strong>INSULATION</strong>: Increases R-4.6."
 
 product_options:
   -
