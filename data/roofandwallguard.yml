@@ -8,7 +8,7 @@ protections:
     description: "<strong>FIRE</strong>: Spray-on WallGuard & RoofGuard .16\" (4 mm) coating, and Fiber Cement Board (FCB) for fire protection of siding earned a rating of \"Non-Combustible\" i.e., did not support flame spread or fire penetration during 35-minute fire test reaching 2,500 F."
   -
     id: 2
-    description: "<strong>MOISTURE</strong>: Passed 4-year water resistance test for wind driven rain and snow (TT-C-555B-3.3.3), yet the membrane is permeable (breathable) allowing interior water vapor to escape, \"similar house wraps or waterproof Gore-Tex garments\." Product is resistant to fungus, mold, and mildew."
+    description: "<strong>MOISTURE</strong>: Passed 4-year water resistance test for wind driven rain and snow (TT-C-555B-3.3.3), yet the membrane is permeable (breathable) allowing interior water vapor to escape, \"similar house wraps or waterproof Gore-Tex garments.\" Product is resistant to fungus, mold, and mildew."
   -
     id: 3
     description: "<strong>SOLAR</strong>: Elongation was tested to 600%+ at 77 F. and when released returned to 100% memory retention, and has a 20-year warranty."
@@ -44,4 +44,4 @@ applications:
     description: <strong>WallGuard</strong> can be applied over and repair cracked stucco and roof covering.
   -
     id: 3
-    description: <strong>WallGuard</strong> can be applied over EIFS (Exterior Insulated Finish Systems) where moisture has penetrated, and remediation is needed for mold and mildew.
+    description: "<strong>WallGuard</strong> can be applied over EIFS (Exterior Insulated Finish Systems) where moisture has penetrated, and remediation is needed for mold and mildew."
