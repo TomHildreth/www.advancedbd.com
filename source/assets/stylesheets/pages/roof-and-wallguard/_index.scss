@@ -1,6 +1,113 @@
 #roof-and-wallguard {
-  background: url('#{$image-path}/pages/roof-and-wallguard/background.jpg') no-repeat;
-  padding: 0;
-  background-size: cover;
-  background-position: top center;
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .roof-and-wallguard-wrapper {
+    @include box-shadow();
+
+    background: url('#{$image-path}/pages/roof-and-wallguard/background.jpg') no-repeat;
+    padding: 0;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+
+    .roof-and-wallguard-details-wrapper {
+      @include media-breakpoint-up(xs) {
+        max-width: map-get($grid-breakpoints, "lg");
+        padding: 2rem 1rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: map-get($grid-breakpoints, "sm");
+        padding: 2rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: map-get($grid-breakpoints, "md");
+      }
+
+      background: rgba(255, 255, 255, $backdrop-opacity-darkest);
+    }
+
+    strong {
+      color: $color-five;
+    }
+
+    img {
+      @include media-breakpoint-up(xs) {
+        max-width: 315px;
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: 450px;
+      }
+    }
+
+    .title {
+      @include secondary-font();
+
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      text-align: center;
+
+      &:last-child {
+        padding-top: 1rem;
+      }
+
+      @include media-breakpoint-up(xs) {
+        span {
+          display: block;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        span {
+          display: initial;
+
+          &:first-child {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .title,
+    .cta {
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+
+    .protections,
+    .options,
+    .maintenance,
+    .applications {
+      ul {
+        list-style-type: none;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+      }
+
+      li {
+        &:not(:last-child) {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .video-wrapper {
+      @include secondary-font();
+
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      padding: 0;
+      color: $color-five;
+
+      .col-12 {
+        padding: 0.5rem;
+      }
+    }
+  }
 }
