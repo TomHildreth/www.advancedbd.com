@@ -22,6 +22,7 @@ after_build do
   Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
 
   File.write('build/CNAME', 'advancedbd.com')
+  File.write('build/404.html', "You have reached our 404 Page. <a href=\"/\">Go back to the home page!</a>")
 
   add_content_to_source(postion: 'header', view_source_file: 'view_source_header.txt')
   add_content_to_source(postion: 'footer', view_source_file: 'view_source_footer.txt')
@@ -29,6 +30,7 @@ end
 
 def add_content_to_source(postion:, view_source_file:)
   Dir.glob('build/**/*.html').map(&File.method(:realpath)).each do |path|
+    return if path.include?('404.html')
     File.write(path, add_to_source(postion: postion,
                                    content: File.read(path),
                                    view_source_file: view_source_file))
