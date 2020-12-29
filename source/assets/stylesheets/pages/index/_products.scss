@@ -52,6 +52,12 @@
         background: rgba(255, 255, 255, $backdrop-opacity-none);
         text-align: left;
 
+        span {
+          &:first-child {
+            padding-right: 0.5rem;
+          }
+        }
+
         .row {
           padding: 1rem 1rem 0 0.5rem;
         }
