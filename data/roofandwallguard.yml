@@ -2,22 +2,31 @@ cta: Advanced Building & Development (ABD) has exclusive rights from Canadian In
 
 video: https://www.youtube.com/embed/hYW-jjqktog
 
-protections:
+performance_data:
   -
     id: 1
-    description: "<strong>FIRE</strong>: Spray-on WallGuard & RoofGuard .16\" (4 mm) coating, and Fiber Cement Board (FCB) for fire protection of siding earned a rating of \"Non-Combustible\" i.e., did not support flame spread or fire penetration during 35-minute fire test reaching 2,500 F."
+    metric: "<strong>FIRE</strong>: <b>Rated \"Non-Combustible\"</b><br/>"
+    details: "Fiber Cement Board (FCB) with spray-on WallGuard & RoofGuard .16\" (4 mm) coating did not support flame spread or fire penetration during 35-minute fire test reaching 2,500 F. and earned a rating of \"Non-Combustible\" for fire protection."
   -
     id: 2
-    description: "<strong>MOISTURE</strong>: Passed 4-year water resistance test for wind driven rain and snow (TT-C-555B-3.3.3), yet the membrane is permeable (breathable) allowing interior water vapor to escape, \"similar house wraps or waterproof Gore-Tex garments.\" Product is resistant to fungus, mold, and mildew."
+    metric: "<strong>MOISTURE</strong>: <b>4 Year Wind-Driven Rain Test</b>"
+    details: "Passed a 4-year water resistance test for wind driven rain and snow (TT-C-555B-3.3.3).  The membrane is permeable (breathable) allowing interior water vapor to escape, \"similar to house wraps or waterproof Gore-Tex garments.\" Product is resistant to fungus, mold, and mildew."
   -
     id: 3
-    description: "<strong>SOLAR</strong>: Elongation was tested to 600%+ at 77 F. and when released returns to normal width 100% memory retention, and has a 20-year warranty."
+    metric: "<strong>ELONGATION</strong>: <b>Passed To 600%+ With 100% Memory Retention</b>"
+    details: "Tested to 600%+ elongation at 77 F. and returns to its original dimensions with no deformation and 100% memory retention."
   -
     id: 4
-    description: "<strong>SOLAR</strong>: Accelerated weathering and solar exposure after 500 hours (equivalent to 4 years) of testing, membrane showed no evidence of checking, cracking, chalking or loss of coating."
+    metric: "<strong>SOLAR</strong>: <b>500 Hours Exposure, No Degradation</b>"
+    details: "Accelerated weathering and solar exposure after 500 hours (equivalent to 4 years) of testing, membrane showed no evidence of checking, cracking, chalking or loss of coating."
   -
     id: 5
-    description: "<strong>INSULATION</strong>: Adds R-4.6 to the wallguard with thermal efficiency."
+    metric: "<strong>INSULATION</strong>: <b>Adds R-4.6</b>"
+    details: "Increases thermal efficiency by an additional R-4.6 to walls and roof of the structure."
+  -
+    id: 6
+    metric: "<strong>WARRANTY</strong>: <b>20-Year</b>"
+    details: "Provided by the manufacture."
 
 product_options:
   -
