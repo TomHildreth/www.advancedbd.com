@@ -18,15 +18,17 @@ section[class="row flex-fill"]
           div[class="col-12 image-wrapper"]
             img[src="#{image_path('pages/roof-and-wallguard/marriot.png')}"]
 
-          div[class="col-12 protections"]
+          div[class="col-12 performance-data"]
             div[class="row"]
               div[class="col-12 title"]
-                |Protections
+                |Performance Data
             div[class="row"]
               ul
-                - data.roofandwallguard.protections.sort_by { |k| k["id"] }.each_with_index do |value, index|
-                  li
-                    = value.description.try(:html_safe)
+                - data.roofandwallguard.performance_data.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                  li[class="metric"]
+                    = value.metric.try(:html_safe)
+                  li[class="details"]
+                    = value.details.try(:html_safe)
           div[class="col-12 image-wrapper"]
             img[src="#{image_path('pages/roof-and-wallguard/background.jpg')}"]
 

@@ -81,7 +81,6 @@
       padding-bottom: 1rem;
     }
 
-    .protections,
     .options,
     .maintenance,
     .applications {
@@ -93,6 +92,29 @@
       li {
         &:not(:last-child) {
           padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .performance-data {
+      ul {
+        list-style-type: none;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+      }
+
+      .details {
+        padding-bottom: 1rem;
+      }
+
+      @include media-breakpoint-up(xs) {
+        .metric {
+          padding-bottom: 1rem;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        .metric {
+          padding-bottom: initial;
         }
       }
     }
