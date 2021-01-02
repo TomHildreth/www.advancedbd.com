@@ -10,21 +10,10 @@
   .section-wrapper {
     @include box-shadow();
 
-    @include media-breakpoint-up(lg) {
-      max-height: 1050px;
-    }
-
+    max-width: map-get($grid-breakpoints, "lg");
     justify-content: flex-start;
     background: rgba(230, 233, 242, $backdrop-opacity-darkest);
     padding: 1rem 1rem 0 1rem;
-
-    @include media-breakpoint-up(md) {
-      max-width: map-get($grid-breakpoints, "md");
-    }
-
-    @include media-breakpoint-up(maximum) {
-      max-width: map-get($grid-breakpoints, "lg");
-    }
 
     .row {
       padding-bottom: 1rem;
