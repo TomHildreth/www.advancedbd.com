@@ -2,59 +2,61 @@
 id: sustainability
 layout: page
 ---
-section[class="row flex-fill call-to-action"]
+section[class="row call-to-action"]
   div[class="col-12 mx-auto section-wrapper"]
-    div[class="row d-md-none"]
-      div[class="col-12 header"]
-        |Sustainability
-
-    div[class="row d-md-none"]
-      div[class="col-12"]
-        = data.sustainability.cta.top.xs
-
-    div[class="row d-md-none"]
-      div[class="col-12 image-wrapper"]
-        img[src="#{image_path('pages/sustainability/design.jpg')}"]
-
-    div[class="row d-md-none"]
-      div[class="col-12"]
-        = data.sustainability.cta.bottom
-
-    div[class="row d-none d-md-flex"]
-      div[class="col-12 col-lg-5"]
-        span
-          = data.sustainability.cta.top.md
-        span
-          = data.sustainability.cta.bottom
-
-      div[class="col-12 col-lg-7 image-wrapper"]
-        img[src="#{image_path('pages/sustainability/design.jpg')}"]
-
-    div[class="row d-none d-lg-flex"]
-      div[class="col-5"]
-        div[class="row"]
-          div[class="col-12 image-wrapper"]
-            img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
-        div[class="row mx-auto"]
-          ul
-            - data.sustainability.statistics.sort_by { |k| k["id"] }.each_with_index do |value, index|
-              li
-                = value.description.try(:html_safe)
-        div[class="row"]
-          div[class="col-12 image-wrapper"]
-            img[src="#{image_path('pages/sustainability/in-sum.png')}"]
-      div[class="col-7"]
-        div[class="row"]
+    div[class="row"]
+      div[class="col-12 mx-auto sustainability-details-wrapper"]
+        div[class="row d-md-none"]
           div[class="col-12 header"]
+            |Sustainability
+
+        div[class="row d-md-none"]
+          div[class="col-12"]
+            = data.sustainability.cta.top.xs
+
+        div[class="row d-md-none"]
+          div[class="col-12 image-wrapper"]
+            img[src="#{image_path('pages/sustainability/design.jpg')}"]
+
+        div[class="row d-md-none"]
+          div[class="col-12"]
+            = data.sustainability.cta.bottom
+
+        div[class="row d-none d-md-flex"]
+          div[class="col-12 col-lg-5"]
             span
-              |ADVANTAGES OF
+              = data.sustainability.cta.top.md
             span
-              |BUILDING WITH SIPs
-        div[class="row"]
-          ul
-            - data.sustainability.details.sort_by { |k| k["id"] }.each_with_index do |value, index|
-              li
-                = value.description.try(:html_safe)
+              = data.sustainability.cta.bottom
+
+          div[class="col-12 col-lg-7 image-wrapper"]
+            img[src="#{image_path('pages/sustainability/design.jpg')}"]
+
+        div[class="row d-none d-lg-flex"]
+          div[class="col-5"]
+            div[class="row"]
+              div[class="col-12 image-wrapper"]
+                img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
+            div[class="row mx-auto"]
+              ul
+                - data.sustainability.statistics.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                  li
+                    = value.description.try(:html_safe)
+            div[class="row"]
+              div[class="col-12 image-wrapper"]
+                img[src="#{image_path('pages/sustainability/in-sum.png')}"]
+          div[class="col-7"]
+            div[class="row"]
+              div[class="col-12 header"]
+                span
+                  |ADVANTAGES OF
+                span
+                  |BUILDING WITH SIPs
+            div[class="row"]
+              ul
+                - data.sustainability.details.sort_by { |k| k["id"] }.each_with_index do |value, index|
+                  li
+                    = value.description.try(:html_safe)
 
 section[class="row d-lg-none statistics"]
   div[class="col-12 mx-auto section-wrapper"]
