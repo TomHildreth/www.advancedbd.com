@@ -6,15 +6,18 @@
   background-size: cover;
   background-position: top center;
   padding: 2rem 1rem 2rem 1rem;
+  min-height: 100vh;
 
-  .section-wrapper {
+  .sustainability-details-wrapper {
     @include box-shadow();
 
     max-width: map-get($grid-breakpoints, "lg");
     justify-content: flex-start;
     background: rgba(230, 233, 242, $backdrop-opacity-darkest);
     padding: 1rem 1rem 0 1rem;
+  }
 
+  .section-wrapper {
     .row {
       padding-bottom: 1rem;
     }
