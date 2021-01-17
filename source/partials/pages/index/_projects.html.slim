@@ -19,7 +19,7 @@ div[class="row mx-auto projects-wrapper no-gutters"]
             active_class = index == 0 ? "active" : ""
           div[class="carousel-item #{postion_class} #{active_class}"]
             div[class="mx-auto carousel-image"]
-              img[class="d-block" src="#{image_path('pages/projects/' + project.image)}"]
+              img[class="d-block" src="#{image_path('pages/projects/' + project.image)}" alt="#{project.meta.description} Keywords: #{project.meta.tags}"]
             div[class="mx-auto carousel-caption"]
               div[class="title"]
                 = project.title

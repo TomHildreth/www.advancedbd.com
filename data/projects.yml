@@ -1,26 +1,53 @@
+sipss_and_solar_savings_chart:
+  details: Total savings over 5 years for the average size home built with SIPs and Solar when using Natural Gas or Propane/Oil for heating.  Actual savings may vary due to size of home, location, and fluctuations in regional material, labor and utilities costs.
+  meta:
+    description: Structural Insulated Panels and Solar Total Savings Over 5 years With Natural Gas heating is $10,301.  Propane or Oil is $12,414.  Actual Savings May Vary Due To Regional Fluctuations In Material, Labor and Utility Costs.
+    tags: >-
+      SIP Savings, Energy Savings,	High Performance Home,	Sustainability,	Cost Reduction,	Structurally Insulated Panels
+
 list:
   -
     id: 1
     title: Federal Energy Efficiency Test Results of Building Systems
     image: federal-energy-efficiency-test-results-of-building-systems/federal-energy-efficiency-test-results-of-building-systems.jpg
+    meta:
+      description: >-
+        Oak Ridge National Laboratory Monument Sign
+      tags: >-
+        SIP Certification,	SIP Efficiency Test,	Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings,	Oak Ridge Testing,	Whole Wall R-Value,	R-Value Testing,	Energy Efficient Testing,	Thermal Resistant,	Thermal Efficient
     details: >-
       Building Departments in each state, Builders and the U.S. Government rely on the thermal efficiency testing conducted at the Department of Energy's Oak Ridge, Tennessee National Laboratory to select the most energy efficient building material for their projects. Oak Ridge tested the energy efficiency of twenty-two (22) of the most popular structural exterior building envelopes (walls & roof).  For a project to maximize its energy efficiency and utility savings, the entire building envelope has to be constructed with the most thermally resistant and cost-effective building material. Oak Ridge determined that Structural insulated Panels are 60% more energy efficient (reducing utility cost 35%) than conventional 2" x 6" wood stud framing with insulation.
   -
     id: 2
     title: Rocky Mountain Dream Home
     image: rocky-mountain-dream-home/rocky-mountain-dream-home.jpg
+    meta:
+      description: >-
+        Colorado Rocky Mountain Dream Home SIP Construction
+      tags: >-
+        SIPs Home,	SIPs Residence,	Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings
     details: >-
       This project is the retirement home for an aerospace engineer.  It has 4,963 sq. ft. of living space with a large dining room, kitchen and island for entertaining guests, spacious master and guests' bedrooms, recreation room, large windows to enjoy the 4-season mountain views and wildlife and covered and uncovered decks for 3-season relaxing or dining outdoors. During the winter a comfortable temperature is maintained with silent "in-floor radiant heat".
   -
     id: 3
     title: Colorado Ski Resort Condos
     image: colorado-ski-resort-condos/colorado-ski-resort-condos.jpg
+    meta:
+      description: >-
+        Colorado ski resort condos SIP construction mid assembly
+      tags: >-
+        SIP Assembly, Easy	SIP Condos,	SIPs Residence,	Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings,	Apartment Construction
     details: >-
       This was one of the most complex assembly projects we have tackled.  The project required 14 truck loads. Initially ABD was going to ship the 1st floor panels starting at the north end of the building, then 2nd and 3rd floors.  But the week before we were schedule to start shipping the owner called and told us "we have a problem." Due to an early winter snowstorm and lower temperatures, the concrete foundation was not pored for the south half of the building.  So, we scrambled and flipped the manufacturing schedule to only produce and ship the north half of the building starting with the 1st floor walls 2nd floor, 3rd floor and roof.  Then start over for the 2nd half of the condo when the foundation was poured and cured.
   -
     id: 4
     title: Hurricane Resistant Coastal Home
     image: hurricane-resistant-coastal-home/hurricane-resistant-coastal-home.jpg
+    meta:
+      description: >-
+        Traditional Home on Daniel Island South Carolina constructed using SIPs for superior strength and hurricane resistance.
+      tags: >-
+        Hurricane Resistance,	Category 5 Hurricane Certification,	SIPs Home,	SIPs Residence,	Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings,	Stronger Construction
     details: >-
       This home has 6,400 sq. ft. of living space.  At the owner’s request, ABD and our Professional Engineer (PE) engineered the structure to withstand Category-5 hurricane winds of 158 mph.  It has 6.5" SIP walls, 8.25" SIP roof. By adding additional inexpensive fasteners and Simpson anchoring systems, the residence has a certified rating that it would withstand 180 mph, which is 1/2 of its actual calculated rating to withstand 360 mph winds. The owner informed us that his house in Atlanta is approximately the same size and has an average monthly utility cost of $385.  The monthly utility cost of his new SIP home on Daniel Island S.C is $124, which is 67% less.  He also told us "his air-conditioner rarely comes on and he was not sure he needed it".  He put a thermometer sensor in the attic and the highest it ever reached that summer was 80 F. degrees.  In Atlanta it would reach 148+ F.
 
@@ -28,23 +55,43 @@ list:
     id: 5
     title: Contemporary Denver Home
     image: contemporary-denver-home/contemporary-denver-home.jpg
+    meta:
+      description: >-
+        Denver Home constructed using SIPs to reduce energy use and utility costs.
+      tags: >-
+        Denver SIPs,	SIPs Home,	SIPs Residence,	Modern Home,	Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings
     details: >-
       This two-story contemporary design home has 2,569 sq. ft. of living space plus a large 2nd floor 650 sq. ft. wrap-around party terrace with parapet walls to enjoy the views of the Denver skyline.  It has a main-level large master bedroom and bath, and on the 2nd floor two large guest bedrooms with separate bathrooms plus a loft/office. The design was to provide large open space for entertaining from the main floor great room, dining area and kitchen and the 2nd floor terrace.
   -
     id: 6
     title: Restaurants
     image: restaurants/restaurants.jpg
+    meta:
+      description: >-
+        Restaurant constructed using SIPs to reduce energy use and utility costs.
+      tags: >-
+        Commercial Building,	SIPs,	Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings,	Restaurant
     details: >-
       Restaurants built with SIPs reduced the utility cost by 35%, which reduces operating cost and increase net profit.
   -
     id: 7
     title: U.S. Government Projects
     image: us-government-projects/us-government-projects.jpg
+    meta:
+      description: >-
+        Antarctic Research Center During Construction.  Structurally Insulated Panels Installation over steel frame.
+      tags: >-
+        Antarctic Research Station,	SIPs	Structurally Insulated Panels,	Energy Efficiency
     details: >-
       The following Federal Government projects selected Structural Insulate Panels “SIPs” for their building exteriors due to their: 1) superior energy efficiency, 2) simplicity in assembling-by-number with less skilled labor, and 3) minimal material waste.  In the Antarctic they selected the thickest SIP which is 12.25" where the temperatures dip down to −128.6 °F.  The 2nd project is a U.S. Forrest Service Ranger Station in Colorado with offices, conference rooms and repair and service bays for equipment and vehicles.
   -
     id: 8
     title: Wisconsin Snowmobile Testing Research Center
     image: wisconsin-snowmobile-testing-research-center/wisconsin-snowmobile-testing-research-center.jpg
+    meta:
+      description: >-
+        New Glarus, Wisconsin Snowmobile Testing Research Center.  Constructed using SIPs and Solar for Energy Reduction.  Multiple structures including large test laboratory and cottage offices.
+      tags: >-
+        Snowmobile Testing Center,	Energy Savings,	Sustainability,	Cost Reduction,	Structurally Insulated Panels,	SIP Savings
     details: >-
       This facility was built in New Glarus, Wisconsin to test and certify the safety and performance of snowmobiles and other outdoor recreational vehicles.  It includes a large test laboratory and cottage.
