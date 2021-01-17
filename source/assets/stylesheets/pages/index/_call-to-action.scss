@@ -159,12 +159,20 @@
         padding: 1rem;
         text-align: center;
 
+        @include media-breakpoint-up(xs) {
+          align-items: normal;
+          padding: 1rem 0;
+
+          #sippayoffcomparison {
+            max-width: 350px;
+          }
+        }
+
         @include media-breakpoint-up(md) {
           display: flex !important;
 
           #sippayoffcomparison {
-            height: 200px;
-            width: 325px;
+            max-width: 500px;
           }
 
           .cta-content-sun,
@@ -175,6 +183,7 @@
 
         @include media-breakpoint-up(lg) {
           align-items: normal;
+          padding: 1rem;
 
           #sippayoffcomparison {
             height: 275px;
