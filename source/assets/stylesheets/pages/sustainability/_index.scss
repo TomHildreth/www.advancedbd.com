@@ -11,6 +11,22 @@
     justify-content: center;
   }
 
+  .image-description {
+
+
+    @include media-breakpoint-up(xs) {
+      padding: 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding: 1rem 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 2rem;
+    }
+  }
+
   @import "pages/sustainability/call-to-action";
   @import "pages/sustainability/statistics";
   @import "pages/sustainability/details";
