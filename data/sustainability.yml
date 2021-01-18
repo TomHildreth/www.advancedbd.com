@@ -6,6 +6,20 @@ cta:
     md: <strong>Sustainability</strong> starts with design and selecting building envelop materials that are friendly to the environment, reduce waste, maximize energy efficiency, and have a long useful life.
   bottom: Orientated Strand Board "OSB" (that are on both sides of the Structural Insulated Panels or SIPs) are harvested from three-to-four-year-old plantation 'renewable' growth hardwoods utilizing 92% of the tree material, which are then replanted for the next crop. Whereas wood studs are cut from old-growth timber utilizing 64% of the tree.
 
+image:
+  seek_available_energy:
+    description: When combined with Solar, Structurally Insulated Panels (SIP's) are the most energy efficient and sustainable construction system
+    title: SIP Construction Combined with Solar reduces energy use and costs
+    tags: Structurally Insulated Panels,	Energy Efficiency,	Cost Reduction,	SIP Savings,	Solar Photovoltaic PV Panels
+  in_sum:
+    description: Using on-site harvested trees for beams and flooring plus SIPs eliminate the use of traditional lumber resulting in improvements in forest management, reduced CO2 output and increased CO2 absorption.
+    title: Output of CO2 from combined sources and Sequester of CO2 through Managed Forests
+    tags: Managed Forests,	CO2 Reduction
+  design:
+    description: Optimization of structural design leveraging Solar, Passive Energy Sources, and Structurally Insulated Panels
+    title: Zero Energy Design with solar and geothermal energy sources and SIP Construction
+    tags: Zero Energy,	Zero Energy Construction,	Energy Efficiency,	Energy Savings,	High Performance Homes,	Structurally Insulated Panels
+
 statistics:
   -
     id: 1
@@ -23,7 +37,7 @@ details:
     description: "<strong>Energy Efficiency</strong>: According to the Federal Lab in Oak Ridge, Tenn. SIPs are 60% more energy efficient than conventional 2x6 wood stud framed structures which reduces utility cost by 36%."
   -
     id: 2
-    description: "<strong>Energy Savings Payback</strong>: After 1-1/2-years your investment in SIPs is paid off with or without Solar. Plus every day your investment in SIPs pays you by reducing your utility cost."
+    description: "<strong>Energy Savings Payback</strong>: Begins immediately because SIP construction cost less than conventional construction; plus add to this the monthly utility savings of 35%.  Plus, if you add Solar to the SIPs the monthly savings increases to 48%."
   -
     id: 3
     description: "<strong>LEED Point Awards from U.S. Green Building Council</strong> SIPs energy savings of 60% earns 16 LEED points (62% of Certified).  SIPs energy efficiency reduces the amount of solar energy required thus scaling down the size and cost of the Solar PV system by 36%. Plus, you receive a Federal Energy Tax Credit of 22% (in year 2021) and Solar adds 3 more LEED points for a total of 73% of Certified."

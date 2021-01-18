@@ -22,8 +22,12 @@ section[class="row flex-fill"]
                   a[href="mailto:#{data.components.social.email}"]
                     = data.components.social.email
           div[class="col-12 d-none d-md-block col-md-6"]
-            img[class="float-right" id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.svg')}"]
-
+            div[class="row"]
+              div[class="col-12"]
+                img[id="sippayoffcomparison" class="float-right" src="#{image_path('charts/sippayoffcomparison.png')}" title="#{data.projects.sipss_and_solar_savings_chart.meta.description}" alt="#{data.projects.sipss_and_solar_savings_chart.meta.tags}"]
+            div[class="row"]
+              div[class="col-12 sippayoffcomparison-details"]
+                = data.projects.sipss_and_solar_savings_chart.details
           div[class="col-12"]
             span[class="title"]
               |Certifications

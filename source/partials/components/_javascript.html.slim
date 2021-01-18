@@ -1,14 +1,6 @@
 = javascript_include_tag(webpack_asset_path("vendor.js", "site"))
 = javascript_include_tag(webpack_asset_path("site.js", "site"))
 
-|<script async src="https://www.googletagmanager.com/gtag/js?id=#{data.components.analytics.google}"></script>
-javascript:
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '#{data.components.analytics.google}');
-
 - if app.development?
   javascript:
     $(document).ready(() => {

@@ -50,8 +50,10 @@
 
     .proposal,
     .video-wrapper {
-      color: $color-five;
-      font-weight: bold;
+      .title {
+        color: $color-five;
+        font-weight: bold;
+      }
     }
 
     .our-proposal,

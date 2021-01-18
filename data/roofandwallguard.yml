@@ -1,6 +1,27 @@
 cta: Advanced Building & Development (ABD) has exclusive rights from Canadian Innovative Coatings (CIC) to market their WallGuard and RoofGuard products in the U.S. and Canada.
 
-video: https://www.youtube.com/embed/hYW-jjqktog
+video:
+  url: https://www.youtube.com/embed/hYW-jjqktog
+  details: >-
+    Fire Test Video of WallGuard Spray On Coating
+  description: >-
+    WallGuard Fire Test Video
+  tags: >-
+    WallGuard,	Spray On Stucco,	Stucco Alternative,	Non-Combustible Wall Coating,	Fire Test
+
+image:
+  mall:
+    description: Shopping Mall in Kissimmee, Florida with white RoofGuard that is sprayed on for fast curing in 2-Hours and elastomeric for protection from heavy solar exposure, expansion and rainfall
+    title: Shopping Mall With Spray On RoofGuard Membrane
+    tags: RoofGuard,	Zero Maintenance,	Roof Membrane Alternative,	Exterior Spray On Finish,	Water Moisture Sealant,	20 Year Warranty,	Humidity Resistance,	Heat Resistance
+  marriott:
+    description: Marriott Residence Inn Alberta, Canada project utilizing WallGuard exterior stucco coating has required no maintenance and repair in the 20+ years since built.
+    title: Marriott Residence Inn Alberta, Canada WallGuard Project
+    tags: WallGuard,	Zero Maintenance Stucco,	Stucco Alternative,	Exterior Spray On Finish,	Water and Snow Sealant,	20 Year Warranty
+  stucco_home:
+    description: Single Family Home with Color Matched WallGuard Spray On Exterior Coating
+    title: Single Family Home With WallGuard Spray On Exterior Coating
+    tags: WallGuard,	Zero Maintenance Stucco,	Stucco Alternative,	Exterior Spray On Finish,	Water and Snow Sealant,	20 Year Warranty
 
 performance_data:
   -

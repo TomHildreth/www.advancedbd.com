@@ -33,8 +33,10 @@ section[class="row flex-fill"]
 
           div[class="col-12"]
             div[class="row video-wrapper"]
-              div[class="col-12"]
+              div[class="col-12 title"]
                 | ABD selected TEMO Inc. as one of our partners for the 2010 Haiti earthquake disaster relief project. The video was included in our presentation.
               div[class="col-12"]
                 div[class="embed-responsive embed-responsive-16by9"]
-                  iframe[class="embed-responsive-item" src="#{data.haitiearthquake.video}?rel=0" allowfullscreen]
+                  iframe[class="embed-responsive-item" src="#{data.haitiearthquake.video.url}?rel=0" allowfullscreen title="#{data.haitiearthquake.video.description}" alt="#{data.haitiearthquake.video.tags}"]
+              div[class="col-12"]
+                = data.haitiearthquake.video.details

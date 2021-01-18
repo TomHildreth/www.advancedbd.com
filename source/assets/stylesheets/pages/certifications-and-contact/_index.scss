@@ -60,8 +60,6 @@
       }
 
       .address-wrapper {
-        padding-top: 1rem;
-
         address {
           display: block;
           padding: 1rem;
@@ -69,9 +67,13 @@
         }
       }
 
+      .sippayoffcomparison-details {
+        padding: 1rem;
+      }
+
       @include media-breakpoint-up(md) {
         #sippayoffcomparison {
-          height: 200px;
+          height: 225px;
           width: 325px;
         }
       }
@@ -79,7 +81,7 @@
       @include media-breakpoint-up(lg) {
         #sippayoffcomparison {
           height: 250px;
-          width: 350px;
+          width: 450px;
         }
       }
     }

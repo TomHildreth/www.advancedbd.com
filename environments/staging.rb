@@ -7,10 +7,10 @@ activate :external_pipeline,
 
 Slim::Engine.set_default_options(pretty: true)
 
-set :relative_links, true
-
-activate :relative_assets
-
 set :protocol, 'https://'
-set :host, 'www.advancedbd.com'
+set :host, 'advancedbd.com'
 set :port, 80
+
+require_relative '../lib/build'
+
+after_build { adjust_final_source }

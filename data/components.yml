@@ -17,6 +17,3 @@ preloader:
   left: '['
   right: ']'
   text: Loading...
-
-analytics:
-  google: G-GT1K0QLF81

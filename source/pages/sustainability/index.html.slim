@@ -15,8 +15,13 @@ section[class="row call-to-action"]
             = data.sustainability.cta.top.xs
 
         div[class="row d-md-none"]
-          div[class="col-12 image-wrapper"]
-            img[src="#{image_path('pages/sustainability/design.jpg')}"]
+          div[class="col-12"]
+            div[class="row"]
+              div[class="col-12 image-wrapper"]
+                img[src="#{image_path('pages/sustainability/design.jpg')}" title="#{data.sustainability.image.design.title}" alt="#{data.sustainability.image.design.tags}"]
+            div[class="row"]
+              div[class="col-12 image-description"]
+                = data.sustainability.image.design.description
 
         div[class="row d-md-none"]
           div[class="col-12"]
@@ -29,14 +34,21 @@ section[class="row call-to-action"]
             span
               = data.sustainability.cta.bottom
 
-          div[class="col-12 col-lg-7 image-wrapper"]
-            img[src="#{image_path('pages/sustainability/design.jpg')}"]
+          div[class="col-12 col-lg-7"]
+            div[class="row"]
+              div[class="col-12 image-wrapper"]
+                img[src="#{image_path('pages/sustainability/design.jpg')}" title="#{data.sustainability.image.design.title}" alt="#{data.sustainability.image.design.tags}"]
+            div[class="row"]
+              div[class="col-12 image-description"]
+                = data.sustainability.image.design.description
 
         div[class="row d-none d-lg-flex"]
           div[class="col-5"]
             div[class="row"]
               div[class="col-12 image-wrapper"]
-                img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
+                img[src="#{image_path('pages/sustainability/seek-available-energy.png')}" title="#{data.sustainability.image.seek_available_energy.title}" alt="#{data.sustainability.image.seek_available_energy.tags}"]
+              div[class="col-12 image-description"]
+                = data.sustainability.image.seek_available_energy.description
             div[class="row mx-auto"]
               ul
                 - data.sustainability.statistics.sort_by { |k| k["id"] }.each_with_index do |value, index|
@@ -44,7 +56,9 @@ section[class="row call-to-action"]
                     = value.description.try(:html_safe)
             div[class="row"]
               div[class="col-12 image-wrapper"]
-                img[src="#{image_path('pages/sustainability/in-sum.png')}"]
+                img[src="#{image_path('pages/sustainability/in-sum.png')}" title="#{data.sustainability.image.in_sum.title}" alt="#{data.sustainability.image.in_sum.tags}"]
+              div[class="col-12 image-description"]
+                = data.sustainability.image.in_sum.description
           div[class="col-7"]
             div[class="row"]
               div[class="col-12 header"]
@@ -77,8 +91,9 @@ section[class="row d-lg-none flex-fill details"]
 
     div[class="row d-lg-none"]
       div[class="col-12 image-wrapper"]
-        img[src="#{image_path('pages/sustainability/seek-available-energy.png')}"]
-
+        img[src="#{image_path('pages/sustainability/seek-available-energy.png')}" title="#{data.sustainability.image.seek_available_energy.title}" alt="#{data.sustainability.image.seek_available_energy.tags}"]
+      div[class="col-12 image-description"]
+        = data.sustainability.image.seek_available_energy.description
     div[class="row d-lg-none"]
       div[class="col-12"]
         ul
@@ -88,4 +103,6 @@ section[class="row d-lg-none flex-fill details"]
 
     div[class="row d-lg-none"]
       div[class="col-12 image-wrapper"]
-        img[src="#{image_path('pages/sustainability/in-sum.png')}"]
+        img[src="#{image_path('pages/sustainability/in-sum.png')}" title="#{data.sustainability.image.in_sum.title}" alt="#{data.sustainability.image.in_sum.tags}"]
+      div[class="col-12 image-description"]
+        = data.sustainability.image.in_sum.description
