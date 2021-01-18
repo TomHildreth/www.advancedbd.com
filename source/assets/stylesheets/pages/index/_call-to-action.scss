@@ -33,6 +33,10 @@
           @include text-stroke(1, $color-black);
         }
 
+        @include media-breakpoint-up(lg) {
+          padding-top: 1rem;
+        }
+
         text-align: left;
         font-size: 0.75rem;
         @media (min-height: $minimum-height) {
@@ -199,6 +203,12 @@
             height: 275px;
             width: 457px;
           }
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        .cta-content-data-chart {
+          padding: 0 1rem 1rem 1rem;
         }
       }
     }

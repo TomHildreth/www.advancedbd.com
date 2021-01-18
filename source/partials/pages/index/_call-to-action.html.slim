@@ -26,25 +26,14 @@ div[class="row section-container"]
         img[id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.png')}" title="#{data.projects.sipss_and_solar_savings_chart.meta.description}" alt="#{data.projects.sipss_and_solar_savings_chart.meta.tags}"]
       div[class="col-12 details"]
         = data.projects.sipss_and_solar_savings_chart.details
+
   div[class="col-12 d-none d-lg-block cta-content"]
     div[class="row cta-content-data"]
       div[class="col-6 products"]
         div[class="row section-wrapper"]
           = partial "partials/pages/index/products"
       div[class="col-6"]
-        div[class="row mx-auto cta-content-about"]
-          div[class="col-12"]
-            span
-              i[class="fas fa-quote-left"]
-            span[class="cta"]
-              = data.components.social.cta
-            span
-              i[class="fas fa-quote-right"]
-          div[class="col-12"]
-            |—
-            =>
-            = data.components.social.ceo
-        div[class="row cta-content-data"]
+        div[class="row cta-content-data cta-content-data-chart"]
           div[class="col-12"]
             div[class="row"]
               img[id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.png')}" title="#{data.projects.sipss_and_solar_savings_chart.meta.description}" alt="#{data.projects.sipss_and_solar_savings_chart.meta.tags}"]
@@ -57,6 +46,18 @@ div[class="row section-container"]
                   div
                     span
                       |Build: Faster. Stronger. Energy Efficient. Green.
+            div[class="row cta-content-about"]
+              div[class="col-12"]
+                span
+                  i[class="fas fa-quote-left"]
+                span[class="cta"]
+                  = data.components.social.cta
+                span
+                  i[class="fas fa-quote-right"]
+              div[class="col-12"]
+                |—
+                =>
+                = data.components.social.ceo
 
   div[class="col-12 cta-banner"]
     div[class="row mx-auto cta-background-description"]
