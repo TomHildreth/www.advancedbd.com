@@ -1,0 +1,34 @@
+div[class="row"]
+  div[class="col-12 mx-auto description-cta-wrapper"]
+    div[class="row"]
+      div[class="col-12 description-cta"]
+        = data.company.description
+
+div[class="row"]
+  div[class="col-12 mx-auto description-wrapper"]
+    div[class="row"]
+      div[class="col-12 col-md-7"]
+        span[class="title"]
+          |Certifications
+        span[class="cta"]
+          |"Not all SIPs are created equal!"
+        span[class="certifications"]
+          ul
+            - data.company.certifications.sort_by { |k| k["id"] }.each_with_index do |certification, index|
+              li
+                = certification.details
+
+      div[class="d-none d-md-block col-md-5 address-wrapper"]
+        div[class="row"]
+          div[class="col-12 description"]
+            |Contact Us
+          div[class="col-12"]
+            address
+              = data.components.social.formalname
+              br
+              = data.components.address.city
+              br
+              = data.components.social.phone
+              br
+              a[href="mailto:#{data.components.social.email}"]
+                = data.components.social.email

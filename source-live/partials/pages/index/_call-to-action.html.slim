@@ -1,0 +1,56 @@
+div[class="row section-container"]
+  div[class="col-12 d-lg-none cta-content"]
+    div[class="row cta-content-details"]
+      div[class="col-12"]
+        div
+          i[class="fas fa-leaf"]
+        div
+          span
+            |Build: Faster. Stronger. Energy Efficient. Green.
+
+    div[class="row cta-content-data"]
+      div[class="col-12"]
+        img[id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.png')}" title="#{data.projects.sipss_and_solar_savings_chart.meta.description}" alt="#{data.projects.sipss_and_solar_savings_chart.meta.tags}"]
+      div[class="col-12 details"]
+        = data.projects.sipss_and_solar_savings_chart.details
+
+  div[class="col-12 d-none d-lg-block cta-content"]
+    div[class="row cta-content-data"]
+      div[class="col-6 products"]
+        div[class="row section-wrapper"]
+          = partial "partials/pages/index/products"
+      div[class="col-6"]
+        div[class="row cta-content-data cta-content-data-chart"]
+          div[class="col-12"]
+            div[class="row"]
+              img[id="sippayoffcomparison" src="#{image_path('charts/sippayoffcomparison.png')}" title="#{data.projects.sipss_and_solar_savings_chart.meta.description}" alt="#{data.projects.sipss_and_solar_savings_chart.meta.tags}"]
+            div[class="row details"]
+              = data.projects.sipss_and_solar_savings_chart.details
+            div[class="row cta-content-details"]
+                div[class="col-12"]
+                  div
+                    i[class="fas fa-leaf"]
+                  div
+                    span
+                      |Build: Faster. Stronger. Energy Efficient. Green.
+
+  div[class="col-12 cta-banner"]
+    div[class="row mx-auto cta-background-description"]
+      div[class="col-12 mx-auto"]
+        = link_to("/pages/sustainability/") do
+          u
+            |Learn more about this sustainable structure
+          |: SIPs & Solar, Net Zero Energy, LEED Platinum
+    div[class="row mx-auto cta-banner-description"]
+      div[class="col-12"]
+        div
+          i[class="fas fa-exclamation-circle"]
+        div
+          span
+            |Lost your home in the Colorado or California fires?
+          span
+            u
+              = link_to("/pages/contact/") do
+                |we can help you
+            =>
+            |rebuild it quickly!

@@ -1,0 +1,33 @@
+#index{
+  main {
+    display: flex;
+    background: url('#{$image-path}/pages/cta-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 100vh;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    max-width: map-get($grid-breakpoints, "maximum");
+
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .header {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include impact-font();
+  }
+}
