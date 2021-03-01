@@ -15,7 +15,7 @@ activate :minify_html do |html|
 end
 
 set :protocol, 'https://'
-set :host, 'advancedbd.com'
+set :host, 'advanced-bt.com'
 set :port, 80
 
 require_relative '../lib/build'
