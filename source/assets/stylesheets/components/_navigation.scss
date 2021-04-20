@@ -43,50 +43,15 @@
           }
 
           embed {
-            width: 40px;
-            pointer-events: none;
-          }
-        }
-      }
-
-      .logo-link-text {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        text-transform: uppercase;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-
-        font-size: 0.75rem;
-        @media (min-height: $minimum-height) {
-          font-size: 1rem;
-        }
-
-        @include media-breakpoint-up(xs) {
-          font-weight: bold;
-
-          a {
-            padding-left: 0.25rem;
+            width: 275px;
+            cursor: pointer;
+            pointer-events: auto;
           }
         }
 
-        @include media-breakpoint-up(sm) {
-          font-size: 1.2rem;
-          font-weight: bold;
-          a {
-            padding-left: 1.5rem;
-          }
-        }
-
-        @include media-breakpoint-up(sm) {
-          a {
-            padding-left: 1rem;
-          }
-        }
-
-        @include media-breakpoint-up(lg) {
-          a {
-            padding-left: 2rem;
+        @include media-breakpoint-up(md) {
+          embed {
+            width: 375px;
           }
         }
       }
